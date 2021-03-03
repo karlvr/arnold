@@ -25,7 +25,7 @@
 #ifdef _MSC_VER
 #include <SDL.h>
 #else
-#include <SDL2/SDL.h>
+#include <SDL.h>
 #endif
 
 extern "C"

@@ -32,7 +32,7 @@
 #include <SDL/SDL.h>
 #endif
 #ifdef USE_SDL2
-#include <SDL2/SDL.h>
+#include <SDL.h>
 #endif
 #endif
 
