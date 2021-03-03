@@ -241,6 +241,17 @@ TARGET_LINK_LIBRARIES(arnold z80tools)
 if (APPLE)
 set(APPS "${CMAKE_INSTALL_PREFIX}/arnold.app")
 set(DIRS "")
+
+# See https://github.com/bvschaik/julius/issues/386#issuecomment-602233717
+# if SDL2 library is a framework, we need to indicate to CMake
+# the path to its dependencies. SDL2_LIBRARY contains two parts.
+# Example: /Library/Frameworks/SDL2.framework;-framework Cocoa
+# So strip out everything after the ';'
+string(REGEX REPLACE ";.*$" "" SDL2_LIB_DIR "${SDL2_LIBRARY}")
+if(EXISTS "${SDL2_LIB_DIR}/Versions/A/Frameworks")
+	set(DIRS "${DIRS};${SDL2_LIB_DIR}/Versions/A/Frameworks")
+endif()
+
 INSTALL(CODE "
    include(BundleUtilities)
    fixup_bundle(\"${APPS}\" \"\" \"${DIRS}\")
