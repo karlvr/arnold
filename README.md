@@ -30,5 +30,38 @@ in `/Library/Framework/SDL2.framework`. Download a new version and replace it as
 Then to codesign the binary:
 
 ```shell
-codesign -v -s "Developer ID Application: Your Company" --timestamp ../exe/Release/arnold/arnold.app
+codesignidentity="Developer ID Application: Your Company"
+codesign -v -s "$codesignidentity" --timestamp --deep --force --options=runtime,hard,kill ../exe/Release/arnold/arnold.app
+```
+
+Note that we must use force in order to replace codesigning on some of the frameworks.
+
+Then to notarize the binary (assuming you're setup with Apple Developer certificates, otherwise
+see https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution):
+
+```shell
+username="APPLE ACCOUNT USERNAME"
+password="APPLE ACCOUNT PASSWORD"
+asc_provider="PROVIDER SHORTNAME"
+
+/usr/bin/ditto -c -k --keepParent "../exe/Release/arnold/arnold.app" "arnold.zip"
+xcrun altool --notarize-app --primary-bundle-id com.thacker.arnold \
+	--asc-provider "$asc_provider" \
+	-u "$username" \
+	-p "$password" \
+	-f "arnold.zip"
+rm arnold.zip
+```
+
+If notarization fails, view the result including a link to the log file:
+
+```shell
+requestuuid="REQUEST UUID FROM UPLOAD"
+xcrun altool --notarization-info "$requestuuid" -u "$username" -p "$password"
+```
+
+Then once you receive the email to say that notarization is complete:
+
+```shell
+xcrun stapler staple "../exe/Release/arnold/arnold.app"
 ```
