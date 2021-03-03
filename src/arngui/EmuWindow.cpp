@@ -507,7 +507,8 @@ void EmulationWindow::HandleKey(wxKeyEvent &event)
 #if ((defined(GTK2_EMBED_WINDOW) && defined(__WXGTK__)) || (defined(MAC_EMBED_WINDOW) && defined(__WXMAC__)))
 	if (!Debug_IsStopped())
 	{
-		if (Keyboard_GetMode() == 0)
+		/* Need to allow non-unicode keys through regardless of keyboard mode, as keyboard mode 1 only handles unicode keys */
+		if (Keyboard_GetMode() == 0 || event.GetUnicodeKey() == 0)
 		{
 			if (!m_bLastTimeStampSet)
 			{
@@ -704,7 +705,7 @@ void EmulationWindow::OnIdle(wxIdleEvent & WXUNUSED(event))
 			{
 				if (StoredKeys[i].m_TimeStamp <= LastTimeStamp)
 				{
-					if ((Keyboard_GetMode() == 1) && (StoredKeys[i].m_bIsChar))
+					if (StoredKeys[i].m_bIsChar)
 					{
 						// this will not work with accented keys
 						wchar_t wstr[2];
@@ -714,7 +715,7 @@ void EmulationWindow::OnIdle(wxIdleEvent & WXUNUSED(event))
 						const wxCharBuffer buffer = str.utf8_str();
 						wxGetApp().SetTranslatedKey(buffer.data());
 					}
-					else if ((Keyboard_GetMode() == 0) && (StoredKeys[i].m_KeyCode))
+					else if (StoredKeys[i].m_KeyCode)
 					{
 						CPC_KEY_ID	theKeyPressed;
 						int keycode = StoredKeys[i].m_KeyCode;
