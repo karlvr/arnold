@@ -1,5 +1,9 @@
 # Arnold CPC emulator
 
+Arnold is a CPC emulator written and maintained by [Kevin Thacker](https://www.cpcwiki.eu/index.php/Kevin_Thacker).
+
+https://www.cpcwiki.eu/index.php/Arnold_(Emulator)
+
 ## Building
 
 ### macOS
