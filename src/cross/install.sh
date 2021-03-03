@@ -1,0 +1,1 @@
+cp FindwxWidgets.cmake /usr/share/cmake-2.8/Modules

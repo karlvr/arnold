@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="pasmolib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="libpasmolib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Debug\" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="libpasmolib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="..\asm.cpp" />
+		<Unit filename="..\asm.h" />
+		<Unit filename="..\asmfile.cpp" />
+		<Unit filename="..\asmfile.h" />
+		<Unit filename="..\asmimpl.cpp" />
+		<Unit filename="..\asmimpl.h" />
+		<Unit filename="..\asmimplparse.cpp" />
+		<Unit filename="..\asmreal.cpp" />
+		<Unit filename="..\asmreal.h" />
+		<Unit filename="..\codeaux.cpp" />
+		<Unit filename="..\codeaux.h" />
+		<Unit filename="..\cpc.cpp" />
+		<Unit filename="..\cpc.h" />
+		<Unit filename="..\local.cpp" />
+		<Unit filename="..\local.h" />
+		<Unit filename="..\machine.cpp" />
+		<Unit filename="..\machine.h" />
+		<Unit filename="..\macro.cpp" />
+		<Unit filename="..\macro.h" />
+		<Unit filename="..\macroframe.cpp" />
+		<Unit filename="..\macroframe.h" />
+		<Unit filename="..\module.cpp" />
+		<Unit filename="..\module.h" />
+		<Unit filename="..\nullstream.cpp" />
+		<Unit filename="..\nullstream.h" />
+		<Unit filename="..\parser.cxx" />
+		<Unit filename="..\parser.h" />
+		<Unit filename="..\parser.yxx" />
+		<Unit filename="..\parseraux.cpp" />
+		<Unit filename="..\parseraux.h" />
+		<Unit filename="..\parsertypes.h" />
+		<Unit filename="..\pasmo.cpp" />
+		<Unit filename="..\pasmodoc.html" />
+		<Unit filename="..\pasmoimpl.h" />
+		<Unit filename="..\pasmotypes.cpp" />
+		<Unit filename="..\pasmotypes.h" />
+		<Unit filename="..\relfile.cpp" />
+		<Unit filename="..\relfile.h" />
+		<Unit filename="..\segment.cpp" />
+		<Unit filename="..\segment.h" />
+		<Unit filename="..\simpleinst.cpp" />
+		<Unit filename="..\simpleinst.h" />
+		<Unit filename="..\spectrum.cpp" />
+		<Unit filename="..\spectrum.h" />
+		<Unit filename="..\tap.cpp" />
+		<Unit filename="..\tap.h" />
+		<Unit filename="..\token.cpp" />
+		<Unit filename="..\token.h" />
+		<Unit filename="..\trace.cpp" />
+		<Unit filename="..\trace.h" />
+		<Unit filename="..\tzx.cpp" />
+		<Unit filename="..\tzx.h" />
+		<Unit filename="..\value.cpp" />
+		<Unit filename="..\value.h" />
+		<Unit filename="..\var.cpp" />
+		<Unit filename="..\var.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

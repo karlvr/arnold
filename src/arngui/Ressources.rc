@@ -1,0 +1,9 @@
+#define wxUSE_NO_MANIFEST 0
+#include "wx/msw/wx.rc"
+
+//icon for application
+MainIcon	ICON	"icons//16x16//arnold.ico"
+
+//icon list for listview
+Arrowup		ICON    "icons//16x16//Arrowup.ico"
+Arrowdown	ICON    "icons//16x16//Arrowdown.ico"

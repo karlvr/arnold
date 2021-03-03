@@ -1,0 +1,17 @@
+// sdl2
+
+SDL_Window* window = NULL;
+SDL_GLContext* context = NULL; // NOTE: This is a pointer!
+
+...
+
+int main(int argc, char** argv) {
+    // Stuff here, initialize 'window'
+
+    *context = SDL_GL_CreateContext(window);
+	
+	
+	http://reservedmemoryblog.blogspot.co.uk/2012/08/sdl20-to-create-modern-opengl-context.html
+	
+	http://www.opengl.org/wiki/Tutorial1:_Creating_a_Cross_Platform_OpenGL_3.2_Context_in_SDL_%28C_/_SDL%29
+	

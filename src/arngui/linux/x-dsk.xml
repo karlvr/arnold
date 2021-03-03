@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+<mime-type type="application/x-dsk">
+<comment>Amstrad CPC Disk Image</comment>
+<icon name="application-x-dsk"/>
+<comment xml:lang="en_GB">Amstrad CPC Disk Image</comment>
+<glob-deleteall/>
+<glob pattern="*.dsk"/>
+</mime-type>
+</mime-info>

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="arngui" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option show_notes="1">
+			<notes>
+				<![CDATA[Define INKZ80 for InkZ80 Z80 core.
+Remove INKZ80 for Arnold's older Z80 core.
+
+Define USE_SDL2 for SDL2 and setup SDL include/lib dir.
+Define USE_SDL for SDL1.
+
+Use -m32 for 32-bit build and -m64 for 64-bit build but make sure you use the correct libs for 32-bit vs 64-bit.
+
+]]>
+			</notes>
+		</Option>
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Windows;Unix;" />
+				<Option output="../../exe/arnold/windows/x86/debug/arnold_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../build/obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-mthreads" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="$(#wx.lib)/gcc48_lib/mswud" />
+				</Compiler>
+				<Linker>
+					<Add option="-mthreads" />
+					<Add library="libwxmsw30ud_core.a" />
+					<Add library="libwxbase30ud.a" />
+					<Add library="libwxpngd.a" />
+					<Add library="libwxzlibd.a" />
+					<Add library="libwxmsw30ud_xrc.a" />
+					<Add library="sdl" />
+					<Add library="libwxmsw30ud_adv.a" />
+					<Add library="winmm" />
+					<Add library="comctl32" />
+					<Add library="uuid" />
+					<Add library="ole32" />
+					<Add library="winspool" />
+					<Add library="libwxbase30ud_xml.a" />
+					<Add library="libwxmsw30ud_html.a" />
+					<Add library="libwxmsw30ud_aui.a" />
+					<Add library="libwxmsw30ud_media.a" />
+					<Add library="libwxmsw30ud_stc.a" />
+					<Add library="libwxmsw30ud.a" />
+					<Add library="libwxexpatd" />
+					<Add library="oleaut32" />
+					<Add library="mingwex" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option platforms="Windows;Unix;" />
+				<Option output="../../exe/arnold/windows/x86/release/arnold" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../build/obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-g" />
+					<Add option="-mthreads" />
+					<Add directory="$(#wx.lib)/gcc48_lib/mswud" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-mthreads" />
+					<Add library="dxguid" />
+					<Add library="ole32" />
+					<Add library="sdl" />
+					<Add library="libwxbase28u.a" />
+					<Add library="libwxmsw28u_core.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxmsw28u_xrc.a" />
+					<Add library="libcomctl32" />
+					<Add library="libwxmsw28u_adv.a" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="SDL_TYPE" value="USE_SDL" />
+				<Variable name="Z80_TYPE" value="INKZ80" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-pipe" />
+			<Add option='[[if (PLATFORM == PLATFORM_MSW &amp;&amp; (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.0.0&quot;))) print(_T(&quot;-Wno-attributes&quot;));]]' />
+			<Add option="-DCPC_LSB_FIRST" />
+			<Add option="-D$(Z80_TYPE)" />
+			<Add option="-D$(SDL_TYPE)" />
+			<Add directory="$(#wx.include)" />
+			<Add directory="$(#wx)/contrib/include" />
+			<Add directory="$(#sdl.include)" />
+		</Compiler>
+		<Linker>
+			<Add directory="$(#wx.lib)/gcc48_lib" />
+			<Add directory="$(#sdl.lib)" />
+		</Linker>
+		<Unit filename="../cpc/CMakeLists.txt" />
+		<Unit filename="../cpc/EmuDevice.h" />
+		<Unit filename="../cpc/aleste.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/aleste.h" />
+		<Unit filename="../cpc/amdrum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/amdrum.h" />
+		<Unit filename="../cpc/amram2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/amram2.h" />
+		<Unit filename="../cpc/amsdos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/amsdos.h" />
+		<Unit filename="../cpc/amxms.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/amxms.h" />
+		<Unit filename="../cpc/arnold.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/arnold.h" />
+		<Unit filename="../cpc/asic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/asic.h" />
+		<Unit filename="../cpc/asicdiss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/audioevent.h" />
+		<Unit filename="../cpc/autoboot.h" />
+		<Unit filename="../cpc/autorunfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/autorunfile.h" />
+		<Unit filename="../cpc/autotype.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/autotype.h" />
+		<Unit filename="../cpc/bmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/bmp.h" />
+		<Unit filename="../cpc/brunword.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/brunword.h" />
+		<Unit filename="../cpc/cassette.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/cassette.h" />
+		<Unit filename="../cpc/cheatdb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/cheatdb.h" />
+		<Unit filename="../cpc/clean.sh" />
+		<Unit filename="../cpc/cpc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/cpc.h" />
+		<Unit filename="../cpc/cpcay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/cpcay.h" />
+		<Unit filename="../cpc/cpcendian.h" />
+		<Unit filename="../cpc/cpcglob.h" />
+		<Unit filename="../cpc/crtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/crtc.h" />
+		<Unit filename="../cpc/crtc_type0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/crtc_type0.h" />
+		<Unit filename="../cpc/crtc_type1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/crtc_type1.h" />
+		<Unit filename="../cpc/crtc_type1b.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/crtc_type1b.h" />
+		<Unit filename="../cpc/crtc_type2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/crtc_type2.h" />
+		<Unit filename="../cpc/crtc_type3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/crtc_type3.h" />
+		<Unit filename="../cpc/crtc_type4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/crtc_type4.h" />
+		<Unit filename="../cpc/csw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/csw.h" />
+		<Unit filename="../cpc/debugger/breakpt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/debugger/breakpt.h" />
+		<Unit filename="../cpc/debugger/dbgitem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/debugger/dissasm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/debugger/dissasm.h" />
+		<Unit filename="../cpc/debugger/gdebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/debugger/gdebug.h" />
+		<Unit filename="../cpc/debugger/item.h" />
+		<Unit filename="../cpc/debugger/memdump.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/debugger/memdump.h" />
+		<Unit filename="../cpc/debugger/parse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/debugger/parse.h" />
+		<Unit filename="../cpc/debugger/stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/debugger/stack.h" />
+		<Unit filename="../cpc/device.h" />
+		<Unit filename="../cpc/digiblaster.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/discwizard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/diskimage/diskimg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/diskimage/diskimg.h" />
+		<Unit filename="../cpc/diskimage/dsk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/diskimage/dsk.h" />
+		<Unit filename="../cpc/diskimage/extdsk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/diskimage/extdsk.h" />
+		<Unit filename="../cpc/diskimage/iextdsk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/diskimage/iextdsk.h" />
+		<Unit filename="../cpc/dobhd20.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/dumpym.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/dumpym.h" />
+		<Unit filename="../cpc/emudevice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/emudevice.h" />
+		<Unit filename="../cpc/endian.h" />
+		<Unit filename="../cpc/fdc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/fdc.h" />
+		<Unit filename="../cpc/fdd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/fdd.h" />
+		<Unit filename="../cpc/fdi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/fdi.h" />
+		<Unit filename="../cpc/garray.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/garray.h" />
+		<Unit filename="../cpc/gendiss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/gendiss.h" />
+		<Unit filename="../cpc/gunstick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/gunstick.h" />
+		<Unit filename="../cpc/headers.h" />
+		<Unit filename="../cpc/host.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/host.h" />
+		<Unit filename="../cpc/i8253.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/i8253.h" />
+		<Unit filename="../cpc/i8255.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/i8255.h" />
+		<Unit filename="../cpc/joystick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/joystick.c.bak" />
+		<Unit filename="../cpc/joystick.h" />
+		<Unit filename="../cpc/joystick.h.bak" />
+		<Unit filename="../cpc/jukebox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/jukebox.h" />
+		<Unit filename="../cpc/kcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/kcc.h" />
+		<Unit filename="../cpc/kempston.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/kempston.h" />
+		<Unit filename="../cpc/labelset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/labelset.h" />
+		<Unit filename="../cpc/magnum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/magnum.h" />
+		<Unit filename="../cpc/mc146818.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/mc146818.h" />
+		<Unit filename="../cpc/megarom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/megarom.h" />
+		<Unit filename="../cpc/memcard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/memory.h" />
+		<Unit filename="../cpc/memrange.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/memrange.h" />
+		<Unit filename="../cpc/mirage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/monitor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/monitor.h" />
+		<Unit filename="../cpc/mouse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/mouse.h" />
+		<Unit filename="../cpc/multface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/multface.h" />
+		<Unit filename="../cpc/multitapx4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/packedimage.h" />
+		<Unit filename="../cpc/pal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/pal.h" />
+		<Unit filename="../cpc/printer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/printer.h" />
+		<Unit filename="../cpc/psg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/psg.h" />
+		<Unit filename="../cpc/psgplay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/psgplay.h" />
+		<Unit filename="../cpc/ramrom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/ramrom.h" />
+		<Unit filename="../cpc/render.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/render.h" />
+		<Unit filename="../cpc/render5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/riff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/riff.h" />
+		<Unit filename="../cpc/sampload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/sampload.h" />
+		<Unit filename="../cpc/snapshot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/snapshot.h" />
+		<Unit filename="../cpc/snapv3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/snapv3.h" />
+		<Unit filename="../cpc/speech.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/speech.h" />
+		<Unit filename="../cpc/spo256.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/spo256.h" />
+		<Unit filename="../cpc/symbiface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/transtape.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/trojan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/tzx.h" />
+		<Unit filename="../cpc/tzxold.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/unused" />
+		<Unit filename="../cpc/voc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/voc.h" />
+		<Unit filename="../cpc/vortex.h" />
+		<Unit filename="../cpc/vrtxram.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/vrtxram.h" />
+		<Unit filename="../cpc/wav.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/wav.h" />
+		<Unit filename="../cpc/westpha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/westpha.h" />
+		<Unit filename="../cpc/winape_poke_database.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/winape_poke_database.h" />
+		<Unit filename="../cpc/z80/z80.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="../cpc/z80/z80.h" />
+		<Unit filename="../cpc/z80/z80daa.h" />
+		<Unit filename="../cpc/z80/z80funcs.h" />
+		<Unit filename="../cpc/z80/z80funcs2.h" />
+		<Unit filename="../cpc/z80/z80gen.h" />
+		<Unit filename="../cpc/z80/z80macros.h" />
+		<Unit filename="../cpc/z80/z80tables.h" />
+		<Unit filename="../cpc/z80ctc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/z80ctc.h" />
+		<Unit filename="../cpc/z80tools/stepOver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/z80tools/z80diss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/z80tools/z80time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/z8536.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../cpc/z8536.h" />
+		<Unit filename="../inkz80/inkz80.cpp" />
+		<Unit filename="AboutDialog.cpp" />
+		<Unit filename="AboutDialog.h" />
+		<Unit filename="ArchiveDialog.cpp" />
+		<Unit filename="ArchiveDialog.h" />
+		<Unit filename="ArnZ80Connect.cpp" />
+		<Unit filename="AudioSettingsDialog.cpp" />
+		<Unit filename="AudioSettingsDialog.h" />
+		<Unit filename="AutoTypeDialog.cpp" />
+		<Unit filename="AutoTypeDialog.h" />
+		<Unit filename="CSDDialog.cpp" />
+		<Unit filename="CSDDialog.h" />
+		<Unit filename="DebuggerDialog.cpp" />
+		<Unit filename="DebuggerDialog.h" />
+		<Unit filename="DevicesDialog.cpp" />
+		<Unit filename="DevicesDialog.h" />
+		<Unit filename="DriveSettingsDialog.cpp" />
+		<Unit filename="DriveSettingsDialog.h" />
+		<Unit filename="DriveStatusDialog.cpp" />
+		<Unit filename="DriveStatusDialog.h" />
+		<Unit filename="EmuFileType.cpp" />
+		<Unit filename="EmuWindow.cpp" />
+		<Unit filename="EmuWindow.h" />
+		<Unit filename="ExpansionRomDialog.cpp" />
+		<Unit filename="ExpansionRomDialog.h" />
+		<Unit filename="FileFiler.cpp" />
+		<Unit filename="FileFilter.h" />
+		<Unit filename="FullScreenDialog.cpp" />
+		<Unit filename="FullScreenDialog.h" />
+		<Unit filename="GraphicsEditor.cpp" />
+		<Unit filename="GraphicsEditor.h" />
+		<Unit filename="InkZ80Connect.cpp" />
+		<Unit filename="IntClientData.h" />
+		<Unit filename="ItemData.cpp" />
+		<Unit filename="ItemData.h" />
+		<Unit filename="JoystickButtonDialog.cpp" />
+		<Unit filename="JoystickButtonDialog.h" />
+		<Unit filename="JoystickDialog.cpp" />
+		<Unit filename="JoystickDialog.h" />
+		<Unit filename="KeyJoyDialog.cpp" />
+		<Unit filename="KeyJoyDialog.h" />
+		<Unit filename="KeyStickDialog.cpp" />
+		<Unit filename="KeyStickDialog.h" />
+		<Unit filename="LoadBinaryDialog.cpp" />
+		<Unit filename="LoadBinaryDialog.h" />
+		<Unit filename="Media.h" />
+		<Unit filename="MediaStatusDialog.cpp" />
+		<Unit filename="MediaStatusDialog.h" />
+		<Unit filename="MultifaceSettingsDialog.cpp" />
+		<Unit filename="MultifaceSettingsDialog.h" />
+		<Unit filename="OnBoardRomDialog.cpp" />
+		<Unit filename="OnBoardRomDialog.h" />
+		<Unit filename="SaveBinaryDialog.cpp" />
+		<Unit filename="SaveBinaryDialog.h" />
+		<Unit filename="SnapshotSettingsDialog.cpp" />
+		<Unit filename="SnapshotSettingsDialog.h" />
+		<Unit filename="SortableListCtrl.cpp" />
+		<Unit filename="SortableListCtrl.h" />
+		<Unit filename="UpdatableDialog.h" />
+		<Unit filename="YMDialogs.cpp" />
+		<Unit filename="YMDialogs.h" />
+		<Unit filename="arngui.fbp" />
+		<Unit filename="arnguiApp.cpp" />
+		<Unit filename="arnguiApp.h" />
+		<Unit filename="arnguiMain.cpp" />
+		<Unit filename="arnguiMain.h" />
+		<Unit filename="arnmodule.cpp" />
+		<Unit filename="bugs.txt" />
+		<Unit filename="module.h" />
+		<Unit filename="sdl2/PlatformSpecific.cpp" />
+		<Unit filename="sdl2/PlatformSpecific.h" />
+		<Unit filename="sdl/PlatformSpecific.cpp" />
+		<Unit filename="sdl/PlatformSpecific.h" />
+		<Unit filename="sdlcommon/sound.cpp" />
+		<Unit filename="sdlcommon/sound.h" />
+		<Unit filename="windows/resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="windows/win.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug LIB|Win32">
+      <Configuration>Debug LIB</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug LIB|x64">
+      <Configuration>Debug LIB</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|Win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|x64">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release LIB|Win32">
+      <Configuration>Release LIB</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release LIB|x64">
+      <Configuration>Release LIB</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|Win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|x64">
+      <Configuration>Release DLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D984673C-BC14-4415-993B-EF5555CD8E76}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>arnold</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug LIB|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug LIB|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release LIB|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release LIB|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="arnold.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug LIB|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="arnold.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="arnold.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug LIB|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="arnold.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="arnold.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release LIB|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="arnold.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="arnold.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release LIB|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="arnold.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\exe\Debug\arnold\</OutDir>
+    <IntDir>$(ProjectDir)\build\$(Configuration)\</IntDir>
+    <TargetName>arnold_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug LIB|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\exe\Debug\arnold\</OutDir>
+    <IntDir>$(ProjectDir)\build\$(Configuration)\</IntDir>
+    <TargetName>arnold_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+    <TargetName>arnold_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)\build\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\..\exe\Debug\arnold\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug LIB|x64'">
+    <TargetName>arnold_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)\build\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\..\exe\Debug\arnold\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\exe\Release\arnold\</OutDir>
+    <IntDir>$(ProjectDir)\build\$(Configuration)\</IntDir>
+    <TargetName>arnold</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release LIB|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\exe\Release\arnold\</OutDir>
+    <IntDir>$(ProjectDir)\build\$(Configuration)\</IntDir>
+    <TargetName>arnold</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'">
+    <TargetName>arnold</TargetName>
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)\build\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\..\exe\Release\arnold\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release LIB|x64'">
+    <TargetName>arnold</TargetName>
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)\build\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)..\..\..\exe\Release\arnold\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;wxUSE_SECRETSTORE;$(SDLTYPE);__WXMSW__;__WXDEBUG__;WXUSINGDLL;wxMSVC_VERSION_AUTO;CPC_LSB_FIRST;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXDIR)\include;$(WXDIR)\contrib\include;$(SDLDIR)\include;$(SDLIMAGEDIR)\include;$(SDLTTFDIR)\include;$(WXDIR)\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(WXDIR)\lib\vc_dll;$(SDLDIR)\lib\$(PlatformTarget);$(SDLIMAGEDIR)\lib\$(PlatformTarget);$(SDLTTFDIR)\lib\$(PlatformTarget)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxmsw31ud_ribbon.lib;wxmsw31ud_qa.lib;wxmsw31ud_stc.lib;wxmsw31ud_xrc.lib;wxmsw31ud_html.lib;wxmsw31ud_adv.lib;wxmsw31ud_core.lib;wxbase31ud_xml.lib;wxmsw31ud_aui.lib;wxmsw31ud_media.lib;wxbase31ud.lib;wxbase31ud_net.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;$(SDLLIB);%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)/$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)..\roms.zip $(OutDir)
+copy $(ProjectDir)..\GUIFrame.xrc $(OutDir)
+copy $(ProjectDir)..\icons\32x32\*.png $(OutDir)
+copy $(ProjectDir)..\*.png $(OutDir)
+copy $(WXDIR)\lib\vc_dll\*.dll $(OutDir)
+copy $(SDLDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLIMAGEDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLTTFDIR)\*.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug LIB|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;wxUSE_SECRETSTORE;$(SDLTYPE);__WXMSW__;__WXDEBUG__;wxMSVC_VERSION_AUTO;CPC_LSB_FIRST;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXDIR)\include;$(WXDIR)\contrib\include;$(SDLDIR)\include;$(SDLIMAGEDIR)\include;$(SDLTTFDIR)\include;$(WXDIR)\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(WXDIR)\lib\_lib;$(SDLDIR)\lib\$(PlatformTarget);$(SDLIMAGEDIR)\lib\$(PlatformTarget);$(SDLTTFDIR)\lib\$(PlatformTarget)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxmsw31ud_ribbon.lib;wxmsw31ud_qa.lib;wxmsw31ud_stc.lib;wxmsw31ud_xrc.lib;wxmsw31ud_html.lib;wxmsw31ud_adv.lib;wxmsw31ud_core.lib;wxbase31ud_xml.lib;wxmsw31ud_aui.lib;wxmsw31ud_media.lib;wxbase31ud.lib;wxbase31ud_net.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;$(SDLLIB);%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)/$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)..\roms.zip $(OutDir)
+copy $(ProjectDir)..\GUIFrame.xrc $(OutDir)
+copy $(ProjectDir)..\icons\32x32\*.png $(OutDir)
+copy $(ProjectDir)..\*.png $(OutDir)
+copy $(WXDIR)\lib\vc_dll\*.dll $(OutDir)
+copy $(SDLDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLIMAGEDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLTTFDIR)\*.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;$(SDLTYPE);__WXMSW__;__WXDEBUG__;WXUSINGDLL;wxMSVC_VERSION_AUTO;CPC_LSB_FIRST;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXDIR)\include;$(WXDIR)\contrib\include;$(SDLDIR)\include;$(SDLIMAGEDIR)\include;$(SDLTTFDIR)\include;$(WXDIR)\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <DisableSpecificWarnings>4820</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(WXDIR)\lib\_$(Platform)_dll;$(SDLDIR)\lib\$(PlatformTarget);$(SDLIMAGEDIR)\lib\$(PlatformTarget);$(SDLTTFDIR)\lib\$(PlatformTarget)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxmsw31ud_ribbon.lib;wxmsw31ud_qa.lib;wxmsw31ud_stc.lib;wxmsw31ud_xrc.lib;wxmsw31ud_html.lib;wxmsw31ud_adv.lib;wxmsw31ud_core.lib;wxbase31ud_xml.lib;wxmsw31ud_aui.lib;wxmsw31ud_media.lib;wxbase31ud.lib;wxbase31ud_net.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;$(SDLLIB);%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)/$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)..\roms.zip $(OutDir)
+copy $(ProjectDir)..\GUIFrame.xrc $(OutDir)
+copy $(ProjectDir)..\icons\32x32\*.png $(OutDir)
+copy $(ProjectDir)..\*.png $(OutDir)
+copy $(WXDIR)\lib\vc_dll\*.dll $(OutDir)
+copy $(SDLDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLIMAGEDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLTTFDIR)\*.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug LIB|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;$(SDLTYPE);__WXMSW__;__WXDEBUG__;wxMSVC_VERSION_AUTO;CPC_LSB_FIRST;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXDIR)\include;$(WXDIR)\contrib\include;$(SDLDIR)\include;$(SDLIMAGEDIR)\include;$(SDLTTFDIR)\include;$(WXDIR)\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <DisableSpecificWarnings>4820</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(WXDIR)\lib\_$(Platform)_lib;$(SDLDIR)\lib\$(PlatformTarget);$(SDLIMAGEDIR)\lib\$(PlatformTarget);$(SDLTTFDIR)\lib\$(PlatformTarget)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxmsw31ud_ribbon.lib;wxmsw31ud_qa.lib;wxmsw31ud_stc.lib;wxmsw31ud_xrc.lib;wxmsw31ud_html.lib;wxmsw31ud_adv.lib;wxmsw31ud_core.lib;wxbase31ud_xml.lib;wxmsw31ud_aui.lib;wxmsw31ud_media.lib;wxbase31ud.lib;wxbase31ud_net.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxregexud.lib;wxexpatd.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;$(SDLLIB);%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)/$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)..\roms.zip $(OutDir)
+copy $(ProjectDir)..\GUIFrame.xrc $(OutDir)
+copy $(ProjectDir)..\icons\32x32\*.png $(OutDir)
+copy $(ProjectDir)..\*.png $(OutDir)
+copy $(WXDIR)\lib\vc_dll\*.dll $(OutDir)
+copy $(SDLDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLIMAGEDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLTTFDIR)\*.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;wxUSE_SECRETSTORE;$(SDLTYPE);__WXMSW__;WXUSINGDLL;wxMSVC_VERSION_AUTO;CPC_LSB_FIRST;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXDIR)\include;$(WXDIR)\contrib\include;$(SDLDIR)\include;$(SDLIMAGEDIR)\include;$(SDLTTFDIR)\include;$(WXDIR)\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>wxmsw31u_ribbon.lib;wxmsw31u_qa.lib;wxmsw31u_stc.lib;wxmsw31u_xrc.lib;wxmsw31u_html.lib;wxmsw31u_adv.lib;wxmsw31u_core.lib;wxbase31u_xml.lib;wxmsw31u_aui.lib;wxmsw31u_media.lib;wxbase31u.lib;wxbase31u_net.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)/$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(WXDIR)\lib\vc_dll;$(SDLDIR)\lib\$(PlatformTarget);$(SDLIMAGEDIR)\lib\$(PlatformTarget);$(SDLTTFDIR)\lib\$(PlatformTarget)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)..\roms.zip $(OutDir)
+copy $(ProjectDir)..\GUIFrame.xrc $(OutDir)
+copy $(ProjectDir)..\icons\32x32\*.png $(OutDir)
+copy $(ProjectDir)..\*.png $(OutDir)
+copy $(WXDIR)\lib\vc_dll\*.dll $(OutDir)
+copy $(SDLDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLIMAGEDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLTTFDIR)\*.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release LIB|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;wxUSE_SECRETSTORE;$(SDLTYPE);__WXMSW__;wxMSVC_VERSION_AUTO;CPC_LSB_FIRST;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXDIR)\include;$(WXDIR)\contrib\include;$(SDLDIR)\include;$(SDLIMAGEDIR)\include;$(SDLTTFDIR)\include;$(WXDIR)\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>wxmsw31u_ribbon.lib;wxmsw31u_qa.lib;wxmsw31u_stc.lib;wxmsw31u_xrc.lib;wxmsw31u_html.lib;wxmsw31u_adv.lib;wxmsw31u_core.lib;wxbase31u_xml.lib;wxmsw31u_aui.lib;wxmsw31u_media.lib;wxbase31u.lib;wxbase31u_net.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)/$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(WXDIR)\lib\_lib;$(SDLDIR)\lib\$(PlatformTarget);$(SDLIMAGEDIR)\lib\$(PlatformTarget);$(SDLTTFDIR)\lib\$(PlatformTarget)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)..\roms.zip $(OutDir)
+copy $(ProjectDir)..\GUIFrame.xrc $(OutDir)
+copy $(ProjectDir)..\icons\32x32\*.png $(OutDir)
+copy $(ProjectDir)..\*.png $(OutDir)
+copy $(WXDIR)\lib\vc_dll\*.dll $(OutDir)
+copy $(SDLDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLIMAGEDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLTTFDIR)\*.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;__WXMSW__;$(SDLTYPE);WXUSINGDLL;wxMSVC_VERSION_AUTO;CPC_LSB_FIRST;$(Z80TYPE);_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXDIR)\include;$(WXDIR)\contrib\include;$(SDLDIR)\include;$(SDLIMAGEDIR)\include;$(SDLTTFDIR)\include;$(WXDIR)\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>wxmsw31u_ribbon.lib;wxmsw31u_qa.lib;wxmsw31u_stc.lib;wxmsw31u_xrc.lib;wxmsw31u_html.lib;wxmsw31u_adv.lib;wxmsw31u_core.lib;wxbase31u_xml.lib;wxmsw31u_aui.lib;wxmsw31u_media.lib;wxbase31u.lib;wxbase31u_net.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)/$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(WXDIR)\lib\vc_dll;$(SDLDIR)\lib\$(PlatformTarget);$(SDLIMAGEDIR)\lib\$(PlatformTarget);$(SDLTTFDIR)\lib\$(PlatformTarget)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)..\roms.zip $(OutDir)
+copy $(ProjectDir)..\GUIFrame.xrc $(OutDir)
+copy $(ProjectDir)..\icons\32x32\*.png $(OutDir)
+copy $(ProjectDir)..\*.png $(OutDir)
+copy $(WXDIR)\lib\vc_dll\*.dll $(OutDir)
+copy $(SDLDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLIMAGEDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLTTFDIR)\*.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release LIB|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;__WXMSW__;$(SDLTYPE);wxMSVC_VERSION_AUTO;CPC_LSB_FIRST;$(Z80TYPE);_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WXDIR)\include;$(WXDIR)\contrib\include;$(SDLDIR)\include;$(SDLIMAGEDIR)\include;$(SDLTTFDIR)\include;$(WXDIR)\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>wxmsw31u_ribbon.lib;wxmsw31u_qa.lib;wxmsw31u_stc.lib;wxmsw31u_xrc.lib;wxmsw31u_html.lib;wxmsw31u_adv.lib;wxmsw31u_core.lib;wxbase31u_xml.lib;wxmsw31u_aui.lib;wxmsw31u_media.lib;wxbase31u.lib;wxbase31u_net.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wsock32.lib;wininet.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)/$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(WXDIR)\lib\_lib;$(SDLDIR)\lib\$(PlatformTarget);$(SDLIMAGEDIR)\lib\$(PlatformTarget);$(SDLTTFDIR)\lib\$(PlatformTarget)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(ProjectDir)..\roms.zip $(OutDir)
+copy $(ProjectDir)..\GUIFrame.xrc $(OutDir)
+copy $(ProjectDir)..\icons\32x32\*.png $(OutDir)
+copy $(ProjectDir)..\*.png $(OutDir)
+copy $(WXDIR)\lib\vc_dll\*.dll $(OutDir)
+copy $(SDLDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLIMAGEDIR)\lib\$(PlatformTarget)\*.dll $(OutDir)
+copy $(SDLTTFDIR)\*.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\cpc\aleste.c" />
+    <ClCompile Include="..\..\cpc\amdrum.c" />
+    <ClCompile Include="..\..\cpc\amram2.c" />
+    <ClCompile Include="..\..\cpc\ams.c" />
+    <ClCompile Include="..\..\cpc\amsdos.c" />
+    <ClCompile Include="..\..\cpc\amxms.c" />
+    <ClCompile Include="..\..\cpc\arnold.c" />
+    <ClCompile Include="..\..\cpc\asic.c" />
+    <ClCompile Include="..\..\cpc\asicdiss.c" />
+    <ClCompile Include="..\..\cpc\ata.c" />
+    <ClCompile Include="..\..\cpc\audio.c" />
+    <ClCompile Include="..\..\cpc\autorunfile.c" />
+    <ClCompile Include="..\..\cpc\autotype.c" />
+    <ClCompile Include="..\..\cpc\bmp.c" />
+    <ClCompile Include="..\..\cpc\brunword.c" />
+    <ClCompile Include="..\..\cpc\cassette.c" />
+    <ClCompile Include="..\..\cpc\cheatdb.c" />
+    <ClCompile Include="..\..\cpc\cpc.c" />
+    <ClCompile Include="..\..\cpc\cpcay.c" />
+    <ClCompile Include="..\..\cpc\crc32.c" />
+    <ClCompile Include="..\..\cpc\crtc.c" />
+    <ClCompile Include="..\..\cpc\crtc_type0.c" />
+    <ClCompile Include="..\..\cpc\crtc_type1.c" />
+    <ClCompile Include="..\..\cpc\crtc_type1b.c" />
+    <ClCompile Include="..\..\cpc\crtc_type2.c" />
+    <ClCompile Include="..\..\cpc\crtc_type3.c" />
+    <ClCompile Include="..\..\cpc\crtc_type4.c" />
+    <ClCompile Include="..\..\cpc\csw.c" />
+    <ClCompile Include="..\..\cpc\ctram.c" />
+    <ClCompile Include="..\..\cpc\ddi.c" />
+    <ClCompile Include="..\..\cpc\debugger\breakpt.c" />
+    <ClCompile Include="..\..\cpc\debugger\dbgitem.c" />
+    <ClCompile Include="..\..\cpc\debugger\dissasm.c" />
+    <ClCompile Include="..\..\cpc\debugger\gdebug.c" />
+    <ClCompile Include="..\..\cpc\debugger\labelset.c" />
+    <ClCompile Include="..\..\cpc\debugger\memdump.c" />
+    <ClCompile Include="..\..\cpc\debugger\parse.c" />
+    <ClCompile Include="..\..\cpc\debugger\stack.c" />
+    <ClCompile Include="..\..\cpc\digiblaster.c" />
+    <ClCompile Include="..\..\cpc\discwizard.c" />
+    <ClCompile Include="..\..\cpc\diskimage\diskimg.c" />
+    <ClCompile Include="..\..\cpc\diskimage\dsk.c" />
+    <ClCompile Include="..\..\cpc\diskimage\extdsk.c" />
+    <ClCompile Include="..\..\cpc\diskimage\iextdsk.c" />
+    <ClCompile Include="..\..\cpc\dobhd20.c" />
+    <ClCompile Include="..\..\cpc\dumpym.c" />
+    <ClCompile Include="..\..\cpc\emudevice.c" />
+    <ClCompile Include="..\..\cpc\fdc.c" />
+    <ClCompile Include="..\..\cpc\fdd.c" />
+    <ClCompile Include="..\..\cpc\fdi.c" />
+    <ClCompile Include="..\..\cpc\garray.c" />
+    <ClCompile Include="..\..\cpc\gendiss.c" />
+    <ClCompile Include="..\..\cpc\gunstick.c" />
+    <ClCompile Include="..\..\cpc\hackit.c" />
+    <ClCompile Include="..\..\cpc\hexam.c" />
+    <ClCompile Include="..\..\cpc\host.c" />
+    <ClCompile Include="..\..\cpc\i8253.c" />
+    <ClCompile Include="..\..\cpc\i8255.c" />
+    <ClCompile Include="..\..\cpc\inicronram.c" />
+    <ClCompile Include="..\..\cpc\joystick.c" />
+    <ClCompile Include="..\..\cpc\jukebox.c" />
+    <ClCompile Include="..\..\cpc\kcc.c" />
+    <ClCompile Include="..\..\cpc\kccfloppy.c" />
+    <ClCompile Include="..\..\cpc\kempston.c" />
+    <ClCompile Include="..\..\cpc\keyjoy.c" />
+    <ClCompile Include="..\..\cpc\lowerrom.c" />
+    <ClCompile Include="..\..\cpc\magnum.c" />
+    <ClCompile Include="..\..\cpc\mc146818.c" />
+    <ClCompile Include="..\..\cpc\megarom.c" />
+    <ClCompile Include="..\..\cpc\memcard.c" />
+    <ClCompile Include="..\..\cpc\memory.c" />
+    <ClCompile Include="..\..\cpc\memrange.c" />
+    <ClCompile Include="..\..\cpc\mht64k.c" />
+    <ClCompile Include="..\..\cpc\mirage.c" />
+    <ClCompile Include="..\..\cpc\monitor.c" />
+    <ClCompile Include="..\..\cpc\mouse.c" />
+    <ClCompile Include="..\..\cpc\multface.c" />
+    <ClCompile Include="..\..\cpc\multitapx4.c" />
+    <ClCompile Include="..\..\cpc\pal.c" />
+    <ClCompile Include="..\..\cpc\printer.c" />
+    <ClCompile Include="..\..\cpc\printfile.c" />
+    <ClCompile Include="..\..\cpc\psg.c" />
+    <ClCompile Include="..\..\cpc\psgplay.c" />
+    <ClCompile Include="..\..\cpc\ramrom.c" />
+    <ClCompile Include="..\..\cpc\render.c" />
+    <ClCompile Include="..\..\cpc\render5.c" />
+    <ClCompile Include="..\..\cpc\riff.c" />
+    <ClCompile Include="..\..\cpc\rombo.c" />
+    <ClCompile Include="..\..\cpc\sampload.c" />
+    <ClCompile Include="..\..\cpc\sdlsound.c" />
+    <ClCompile Include="..\..\cpc\smartwatch.c" />
+    <ClCompile Include="..\..\cpc\snapshot.c" />
+    <ClCompile Include="..\..\cpc\snapv3.c" />
+    <ClCompile Include="..\..\cpc\speech.c" />
+    <ClCompile Include="..\..\cpc\spo256.c" />
+    <ClCompile Include="..\..\cpc\symbiface.c" />
+    <ClCompile Include="..\..\cpc\transtape.c" />
+    <ClCompile Include="..\..\cpc\trojan.c" />
+    <ClCompile Include="..\..\cpc\tzxold.c" />
+    <ClCompile Include="..\..\cpc\uide.c" />
+    <ClCompile Include="..\..\cpc\voc.c" />
+    <ClCompile Include="..\..\cpc\vortexwd20.c" />
+    <ClCompile Include="..\..\cpc\vrtxram.c" />
+    <ClCompile Include="..\..\cpc\wav.c" />
+    <ClCompile Include="..\..\cpc\westpha.c" />
+    <ClCompile Include="..\..\cpc\xmass.c" />
+    <ClCompile Include="..\..\cpc\xmem.c" />
+    <ClCompile Include="..\..\cpc\z80ctc.c" />
+    <ClCompile Include="..\..\cpc\z80tools\stepOver.c" />
+    <ClCompile Include="..\..\cpc\z80tools\z80diss.c" />
+    <ClCompile Include="..\..\cpc\z80tools\z80time.c" />
+    <ClCompile Include="..\..\cpc\z80\z80.c" />
+    <ClCompile Include="..\..\cpc\z8536.c" />
+    <ClCompile Include="..\..\inkz80\inkz80.cpp" />
+    <ClCompile Include="..\AboutDialog.cpp" />
+    <ClCompile Include="..\ArchiveDialog.cpp" />
+    <ClCompile Include="..\arnguiApp.cpp" />
+    <ClCompile Include="..\arnguiMain.cpp" />
+    <ClCompile Include="..\arnmodule.cpp" />
+    <ClCompile Include="..\ArnZ80Connect.cpp" />
+    <ClCompile Include="..\ArrayOfInts.cpp" />
+    <ClCompile Include="..\AudioSettingsDialog.cpp" />
+    <ClCompile Include="..\AutoTypeDialog.cpp" />
+    <ClCompile Include="..\connection.cpp" />
+    <ClCompile Include="..\CSDDialog.cpp" />
+    <ClCompile Include="..\DebuggerDialog.cpp" />
+    <ClCompile Include="..\DevicesDialog.cpp" />
+    <ClCompile Include="..\DefineKeyDialog.cpp" />
+    <ClCompile Include="..\DriveSettingsDialog.cpp" />
+    <ClCompile Include="..\DriveStatusDialog.cpp" />
+    <ClCompile Include="..\EmuFileType.cpp" />
+    <ClCompile Include="..\EmuWindow.cpp" />
+    <ClCompile Include="..\ExpansionRomDialog.cpp" />
+    <ClCompile Include="..\FileFiler.cpp" />
+    <ClCompile Include="..\FullScreenDialog.cpp" />
+    <ClCompile Include="..\GetKeyDialog.cpp" />
+    <ClCompile Include="..\GraphicsEditor.cpp" />
+    <ClCompile Include="..\hostg.c" />
+    <ClCompile Include="..\InkZ80Connect.cpp" />
+    <ClCompile Include="..\ItemData.cpp" />
+    <ClCompile Include="..\JoystickButtonDialog.cpp" />
+    <ClCompile Include="..\JoystickDialog.cpp" />
+    <ClCompile Include="..\KeyJoyDialog.cpp" />
+    <ClCompile Include="..\KeyStickDialog.cpp" />
+    <ClCompile Include="..\LabelManager.cpp" />
+    <ClCompile Include="..\LoadBinaryDialog.cpp" />
+    <ClCompile Include="..\MediaStatusDialog.cpp" />
+    <ClCompile Include="..\MonitorSettingsDialog.cpp" />
+    <ClCompile Include="..\OnBoardRomDialog.cpp" />
+    <ClCompile Include="..\OSD.cpp" />
+    <ClCompile Include="..\PokeMemoryDialog.cpp" />
+    <ClCompile Include="..\PositionalKeyboardDialog.cpp" />
+    <ClCompile Include="..\SaveBinaryDialog.cpp" />
+    <ClCompile Include="..\sdl2\SDL2PlatformSpecific.cpp" />
+    <ClCompile Include="..\sdlcommon\sound.cpp" />
+    <ClCompile Include="..\sdl\SDLPlatformSpecific.cpp" />
+    <ClCompile Include="..\SnapshotLoadDialog.cpp" />
+    <ClCompile Include="..\SnapshotSettingsDialog.cpp" />
+    <ClCompile Include="..\SortableListCtrl.cpp" />
+    <ClCompile Include="..\winape_poke_database.cpp" />
+    <ClCompile Include="..\windows\win.cpp" />
+    <ClCompile Include="..\YMDialogs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\cpc\aleste.h" />
+    <ClInclude Include="..\..\cpc\amdrum.h" />
+    <ClInclude Include="..\..\cpc\amram2.h" />
+    <ClInclude Include="..\..\cpc\amsdos.h" />
+    <ClInclude Include="..\..\cpc\amxms.h" />
+    <ClInclude Include="..\..\cpc\arnold.h" />
+    <ClInclude Include="..\..\cpc\asic.h" />
+    <ClInclude Include="..\..\cpc\ata.h" />
+    <ClInclude Include="..\..\cpc\audio.h" />
+    <ClInclude Include="..\..\cpc\audioevent.h" />
+    <ClInclude Include="..\..\cpc\autoboot.h" />
+    <ClInclude Include="..\..\cpc\autorunfile.h" />
+    <ClInclude Include="..\..\cpc\autotype.h" />
+    <ClInclude Include="..\..\cpc\bmp.h" />
+    <ClInclude Include="..\..\cpc\brunword.h" />
+    <ClInclude Include="..\..\cpc\cassette.h" />
+    <ClInclude Include="..\..\cpc\cheatdb.h" />
+    <ClInclude Include="..\..\cpc\cpc.h" />
+    <ClInclude Include="..\..\cpc\cpcay.h" />
+    <ClInclude Include="..\..\cpc\cpcendian.h" />
+    <ClInclude Include="..\..\cpc\cpcglob.h" />
+    <ClInclude Include="..\..\cpc\crtc.h" />
+    <ClInclude Include="..\..\cpc\crtc_type0.h" />
+    <ClInclude Include="..\..\cpc\crtc_type1.h" />
+    <ClInclude Include="..\..\cpc\crtc_type1b.h" />
+    <ClInclude Include="..\..\cpc\crtc_type2.h" />
+    <ClInclude Include="..\..\cpc\crtc_type3.h" />
+    <ClInclude Include="..\..\cpc\crtc_type4.h" />
+    <ClInclude Include="..\..\cpc\csw.h" />
+    <ClInclude Include="..\..\cpc\ctram.h" />
+    <ClInclude Include="..\..\cpc\ddi.h" />
+    <ClInclude Include="..\..\cpc\debugger\breakpt.h" />
+    <ClInclude Include="..\..\cpc\debugger\dissasm.h" />
+    <ClInclude Include="..\..\cpc\debugger\gdebug.h" />
+    <ClInclude Include="..\..\cpc\debugger\item.h" />
+    <ClInclude Include="..\..\cpc\debugger\labelset.h" />
+    <ClInclude Include="..\..\cpc\debugger\memdump.h" />
+    <ClInclude Include="..\..\cpc\debugger\parse.h" />
+    <ClInclude Include="..\..\cpc\debugger\stack.h" />
+    <ClInclude Include="..\..\cpc\device.h" />
+    <ClInclude Include="..\..\cpc\diskimage\diskimg.h" />
+    <ClInclude Include="..\..\cpc\diskimage\dsk.h" />
+    <ClInclude Include="..\..\cpc\diskimage\extdsk.h" />
+    <ClInclude Include="..\..\cpc\diskimage\iextdsk.h" />
+    <ClInclude Include="..\..\cpc\dumpym.h" />
+    <ClInclude Include="..\..\cpc\EmuDevice.h" />
+    <ClInclude Include="..\..\cpc\fdc.h" />
+    <ClInclude Include="..\..\cpc\fdd.h" />
+    <ClInclude Include="..\..\cpc\fdi.h" />
+    <ClInclude Include="..\..\cpc\garray.h" />
+    <ClInclude Include="..\..\cpc\gendiss.h" />
+    <ClInclude Include="..\..\cpc\gunstick.h" />
+    <ClInclude Include="..\..\cpc\headers.h" />
+    <ClInclude Include="..\..\cpc\host.h" />
+    <ClInclude Include="..\..\cpc\i8253.h" />
+    <ClInclude Include="..\..\cpc\i8255.h" />
+    <ClInclude Include="..\..\cpc\joystick.h" />
+    <ClInclude Include="..\..\cpc\jukebox.h" />
+    <ClInclude Include="..\..\cpc\kcc.h" />
+    <ClInclude Include="..\..\cpc\kempston.h" />
+    <ClInclude Include="..\..\cpc\keyjoy.h" />
+    <ClInclude Include="..\..\cpc\labelset.h" />
+    <ClInclude Include="..\..\cpc\magnum.h" />
+    <ClInclude Include="..\..\cpc\mc146818.h" />
+    <ClInclude Include="..\..\cpc\megarom.h" />
+    <ClInclude Include="..\..\cpc\memory.h" />
+    <ClInclude Include="..\..\cpc\memrange.h" />
+    <ClInclude Include="..\..\cpc\monitor.h" />
+    <ClInclude Include="..\..\cpc\mouse.h" />
+    <ClInclude Include="..\..\cpc\multface.h" />
+    <ClInclude Include="..\..\cpc\multiplay.h" />
+    <ClInclude Include="..\..\cpc\packedimage.h" />
+    <ClInclude Include="..\..\cpc\pal.h" />
+    <ClInclude Include="..\..\cpc\printer.h" />
+    <ClInclude Include="..\..\cpc\psg.h" />
+    <ClInclude Include="..\..\cpc\psgplay.h" />
+    <ClInclude Include="..\..\cpc\ramrom.h" />
+    <ClInclude Include="..\..\cpc\render.h" />
+    <ClInclude Include="..\..\cpc\riff.h" />
+    <ClInclude Include="..\..\cpc\sampload.h" />
+    <ClInclude Include="..\..\cpc\sdlsound.h" />
+    <ClInclude Include="..\..\cpc\smartwatch.h" />
+    <ClInclude Include="..\..\cpc\snapshot.h" />
+    <ClInclude Include="..\..\cpc\snapv3.h" />
+    <ClInclude Include="..\..\cpc\speech.h" />
+    <ClInclude Include="..\..\cpc\spo256.h" />
+    <ClInclude Include="..\..\cpc\tzx.h" />
+    <ClInclude Include="..\..\cpc\voc.h" />
+    <ClInclude Include="..\..\cpc\vortex.h" />
+    <ClInclude Include="..\..\cpc\vrtxram.h" />
+    <ClInclude Include="..\..\cpc\wav.h" />
+    <ClInclude Include="..\..\cpc\westpha.h" />
+    <ClInclude Include="..\..\cpc\winape_poke_database.h" />
+    <ClInclude Include="..\..\cpc\xmem.h" />
+    <ClInclude Include="..\..\cpc\z80ctc.h" />
+    <ClInclude Include="..\..\cpc\z80\z80.h" />
+    <ClInclude Include="..\..\cpc\z80\z80daa.h" />
+    <ClInclude Include="..\..\cpc\z80\z80funcs.h" />
+    <ClInclude Include="..\..\cpc\z80\z80funcs2.h" />
+    <ClInclude Include="..\..\cpc\z80\z80macros.h" />
+    <ClInclude Include="..\..\cpc\z80\z80tables.h" />
+    <ClInclude Include="..\..\cpc\z8536.h" />
+    <ClInclude Include="..\..\inkz80\inkz80.h" />
+    <ClInclude Include="..\AboutDialog.h" />
+    <ClInclude Include="..\ArchiveDialog.h" />
+    <ClInclude Include="..\arnguiApp.h" />
+    <ClInclude Include="..\arnguiMain.h" />
+    <ClInclude Include="..\arnmodule.h" />
+    <ClInclude Include="..\AudioSettingsDialog.h" />
+    <ClInclude Include="..\AutoTypeDialog.h" />
+    <ClInclude Include="..\connection.h" />
+    <ClInclude Include="..\CSDDialog.h" />
+    <ClInclude Include="..\DebuggerDialog.h" />
+    <ClInclude Include="..\DefineKeyDialog.h" />
+    <ClInclude Include="..\DevicesDialog.h" />
+    <ClInclude Include="..\DriveSettingsDialog.h" />
+    <ClInclude Include="..\DriveStatusDialog.h" />
+    <ClInclude Include="..\EmuFileType.h" />
+    <ClInclude Include="..\EmuWindow.h" />
+    <ClInclude Include="..\ExpansionRomDialog.h" />
+    <ClInclude Include="..\FileFilter.h" />
+    <ClInclude Include="..\FullScreenDialog.h" />
+    <ClInclude Include="..\GetKeyDialog.h" />
+    <ClInclude Include="..\GraphicsEditor.h" />
+    <ClInclude Include="..\IntClientData.h" />
+    <ClInclude Include="..\ItemData.h" />
+    <ClInclude Include="..\JoystickButtonDialog.h" />
+    <ClInclude Include="..\JoystickDialog.h" />
+    <ClInclude Include="..\KeyDefStruct.h" />
+    <ClInclude Include="..\KeyJoyDialog.h" />
+    <ClInclude Include="..\KeyStickDialog.h" />
+    <ClInclude Include="..\LabelManager.h" />
+    <ClInclude Include="..\LoadBinaryDialog.h" />
+    <ClInclude Include="..\Media.h" />
+    <ClInclude Include="..\MediaStatusDialog.h" />
+    <ClInclude Include="..\MonitorSettingsDialog.h" />
+    <ClInclude Include="..\MultifaceSettingsDialog.h" />
+    <ClInclude Include="..\OnBoardRomDialog.h" />
+    <ClInclude Include="..\OSD.h" />
+    <ClInclude Include="..\PokeMemoryDialog.h" />
+    <ClInclude Include="..\PositionalKeyboardDialog.h" />
+    <ClInclude Include="..\SaveBinaryDialog.h" />
+    <ClInclude Include="..\sdl2\PlatformSpecific.h" />
+    <ClInclude Include="..\sdl2\SDL2PlatformSpecific.h" />
+    <ClInclude Include="..\sdlcommon\sound.h" />
+    <ClInclude Include="..\sdl\PlatformSpecific.h" />
+    <ClInclude Include="..\sdl\SDLPlatformSpecific.h" />
+    <ClInclude Include="..\SnapshotLoadDialog.h" />
+    <ClInclude Include="..\SnapshotSettingsDialog.h" />
+    <ClInclude Include="..\SortableListCtrl.h" />
+    <ClInclude Include="..\UpdatableDialog.h" />
+    <ClInclude Include="..\winape_poke_database.h" />
+    <ClInclude Include="..\YMDialogs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\windows\resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\cpc\clean.sh" />
+    <None Include="..\..\cpc\CMakeLists.txt" />
+    <None Include="..\..\cpc\debugger\clean.sh" />
+    <None Include="..\..\cpc\debugger\CMakeLists.txt" />
+    <None Include="..\..\cpc\diskimage\clean.sh" />
+    <None Include="..\..\cpc\diskimage\CMakeLists.txt" />
+    <None Include="..\..\cpc\snapshot.c~" />
+    <None Include="..\..\cpc\unused" />
+    <None Include="..\arngui.fbp" />
+    <None Include="..\GUIFrame.xrc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

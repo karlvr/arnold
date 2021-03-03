@@ -1,0 +1,101 @@
+/* Bryce's MegaROM emulation */
+#ifndef INKZ80
+#include "z80/z80.h"
+#endif
+#include "cpc.h"
+#include "brunword.h"
+
+static int BrunWord_ROMSelected[4];
+static BOOL BrunWord_ROMEnabled[4];
+static unsigned char *pBrunWordRom = NULL;
+
+static BOOL BrunWord_LowerRomEnabled = FALSE;
+static unsigned char BrunWord_LowerRomIndex = 0;
+static unsigned char BrunWord_UpperRomIndex = 0;
+
+void	BrunWordMk4_ROMSelect(Z80_WORD Port, Z80_BYTE Data)
+{
+    if ((Data & 0x0c0)==0x0c0)
+    {
+        if ((Data & (1<<2))==0)
+        {
+            BrunWord_LowerRomIndex = ((Data>>1)|(Data & 0x03)) & 0x01f;
+            BrunWord_LowerRomEnabled = FALSE;
+        }
+    }
+    else if ((Data & 0x0c0)==0x0)
+    {
+        BrunWord_UpperRomIndex = Data & 0x03;
+    }
+
+    Computer_RethinkMemory();
+}
+
+void BrunWord_SetROM(unsigned char *pROM, unsigned long RomLength)
+{
+    pBrunWordRom = pROM;
+}
+
+void BrunWord_MemoryRethink(MemoryData *pData)
+{
+    if (pData->bRomEnable[6])
+    {
+        int RomIndex = BrunWord_UpperRomIndex;
+        int RomOffset = RomIndex<<14;
+        const unsigned char *pROMData = &pBrunWordRom[RomOffset]-0x0c000;
+        pData->bRomDisable[7] = TRUE;
+        pData->bRomDisable[6] = TRUE;
+        pData->pReadPtr[7] = pROMData;
+        pData->pReadPtr[6] = pROMData;
+
+        if (BrunWord_LowerRomEnabled)
+        {
+            int RomIndex = BrunWord_LowerRomIndex;
+            int RomOffset = RomIndex<<14;
+            const unsigned char *pROMData = &pBrunWordRom[RomOffset]-0x04000;
+            pData->bRomDisable[3] = TRUE;
+            pData->bRomDisable[2] = TRUE;
+            pData->pReadPtr[3] = pROMData;
+            pData->pReadPtr[2] = pROMData;
+        }
+    }
+
+}
+
+CPCPortWrite BrunWordSelectWrite=
+{
+	/* port needs to be confirmed */
+    /* A13 = 0 */
+    0x02000,            /* and */
+    0x00000,            /* compare */
+    BrunWord_ROMSelect
+};
+
+void	BrunWordMk4_Install(void)
+{
+    int i;
+    for (i=0; i<4; i++)
+    {
+        BrunWord_ROMEnabled[i] = FALSE;
+    }
+    CPC_InstallWritePort(&BrunWordSelectWrite);
+     CPC_InstallMemoryRethinkHandler(BrunWord_MemoryRethink);
+}
+
+void	BrunWordMk4_UnInstall(void)
+{
+
+    CPC_UninstallWritePort(&BrunWordSelectWrite);
+    CPC_UnInstallMemoryRethinkHandler(BrunWord_MemoryRethink);
+}
+
+
+
+
+
+
+
+
+
+
+

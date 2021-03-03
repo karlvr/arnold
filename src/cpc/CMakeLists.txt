@@ -1,0 +1,10 @@
+IF(USE_INKZ80 MATCHES "Yes")
+else(USE_INKZ80 MATCHES "Yes")
+add_subdirectory (z80)
+endif(USE_INKZ80 MATCHES "Yes")
+add_subdirectory(z80tools)
+add_subdirectory (debugger)
+add_subdirectory (diskimage)
+
+file(GLOB  cpc_FILES *.c)
+add_library (cpc ${cpc_FILES}) 

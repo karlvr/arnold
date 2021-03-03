@@ -1,0 +1,171 @@
+There are two Z80 cores: Arnold's Z80 core and InkZ80's Z80 core
+
+Arnold's Z80 core - from previous Arnold with some some bug fixes 
+
+InkZ80's core - much more accurate than Arnold's Z80 core, but timing 
+is not correct for CPC.
+
+There are two builds: Debug and Release
+
+Release versions are faster than debug versions. Debug have symbols and not
+compiled with optimisations enabled. 
+
+Debug version is for debugging and testing the emulation. Normally you
+should use Release.
+
+LINUX (tested on Ubuntu linux)
+=====
+
+For Linux the required packages for building are (or later version):
+
+gcc
+g++
+libsdl1.2-dev (or libsdl2.0-dev)
+cmake
+libwxgtk2.8-dev (or 2.9 or 3.0)
+
+for embedding SDL within the main window, please install:
+
+libgtk2.0-dev
+
+
+There are some shell scripts within the src directory you can use.
+
+Arnold's Z80 core, SDL:
+
+make_arnz80_release.sh
+
+Arnold's Z80 core, SDL2:
+
+make_arnz80_sdl2_release.sh
+
+InkZ80 core, SDL:
+
+make_inkz80_release.sh
+
+InkZ80 core, SDL2:
+
+make_inkz80_sdl2_release.sh
+
+Within src/arngui/linux there is a shell script that installs some file types 
+and there is a desktop file you can put on your desktop to launch Arnold.
+
+Eventually these will be configured with a package.
+
+The built executable is put in an exe folder next to src.
+
+WINDOWS (tested on Windows 8.1)
+========
+
+To be updated.
+
+Windows installation required:
+
+wxpack 2.8 (or 3.0)
+code:blocks
+
+There is a code:blocks project (arngui.cbp) within the arngui folder. This can be used on Windows or Linux.
+
+MAC (tested on mountain lion)
+===
+
+1. Download cmake
+a) www.cmake.org/download
+b) Latest release 3.2.3
+c) Mac OSX 10.6 or later
+d) cmake-3.2.3-Darwin-x86_64.dmg
+e) When downloaded open dmg.
+f) choose agree
+g) drag and drop to Applications shortcut to install
+h) Check cmake is in your applications
+
+2. Download sdl2
+a) www.libsdl.org
+b) Download
+c) download sdl2-2.0.3.dmg
+d) In Finder use Go->Go to folder...
+e) enter /Library/Frameworks
+f) Now drag and drop the sdl2.framework into this folder and enter your credentials to install
+
+3. Download wxWidgets 3.0.1 (stable)
+a) www.wxwidgets.org/downloads/
+b) Source for linux/mac osx etc. (it will download wxWidgets-3.0.2-tar.bz2)
+c) Move download to a directory of your choice.
+d) Open the terminal where the .bz2 file is and enter:
+bunzip2 wxWidgets-3.0.2.tar.bz2
+(Using the Archive Utility didn't work for me)
+You should see a directory called wxWidgets-3.0.2 full of files.
+
+Alternative for wxWidgets ("unstable" code):
+a) https://github.com/wxWidgets/wxWidgets
+b) click download zip
+c) Move download to a directory of your choice
+d) Open terminal where the zip file is
+e) unzip wxWidgets-master.zip
+You should see a directory called wxWidgets-master full of files.
+
+4. Download XCode from the Apple App store (you need an apple id for this)
+a) Start XCode
+b) In Downloads->Components select "Command Line Tools"
+
+OR
+
+Download Command-Line Tools
+a) Download command-line tools dmg
+b) Open it.
+c) Double click pkg to install
+
+5. Build and install wxWidgets
+a) Open a Terminal at the location of your wxWidgets directory
+b) Enter:
+./configure --disable-shared --with-macosx-version-min=10.7 LDFLAGS="-stdlib=libc++" CXXFLAGS="-std=c++11 -stdlib=libc++" OBJCXXFLAGS="-stdlib=libc++"
+
+mountain lion, latest wxwidgets code from :
+
+./configure --disable-shared --with-macosx-version-min=10.8
+make
+sudo make install
+
+on Lion (from http://codelite.org/Developers/BuildingCodeLiteOnAMac#toc3):
+// old
+../configure --disable-shared --enable-monolithic --with-osx_cocoa CXX='clang++ -std=c++11 -stdlib=libc++' CC=clang --with-macosx-version-min=10.8 --disable-debug
+make -j4
+sudo make install
+
+c) make
+And wait a long long time. (10 minutes or about)
+d) sudo make install
+e) wx-config --list
+
+This should show something that looks like this:
+
+"Default config is osx_cocoa-unicode-static-3.1"
+
+6. Build Arnold
+a) Open a terminal where the arnold source code is
+b) cd src
+c) find ./ -name "*.sh" -type f | xargs chmod +x 
+d) ./make_mac.sh
+OR
+./make_arnz80_sdl2_release.sh
+cd build_arnz80_sdl2_release
+make install
+
+7. Run Arnold via command-line
+a) in terminal
+b) cd ../exe/Release/arnold/arnold.app/Contents/MacOS
+c) ./arnold
+
+OR via finder:
+
+a) go to exe/Release/arnold
+b) double click on the arnold icon
+
+If arnold doesn't open remove the line setting opengl in SDL2PlatformSpecific.cpp
+
+8. Make package:
+a) in terminal in source directory
+b) cd arngui
+c) ./make_dmg.sh
+
+ 

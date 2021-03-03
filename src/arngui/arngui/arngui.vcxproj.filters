@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\sdl">
+      <UniqueIdentifier>{2a1f6ecc-511f-4ce3-b57e-5e32eb9d212a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sdl2">
+      <UniqueIdentifier>{2eb14841-729a-42fb-b0a8-350f91b75ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arngui">
+      <UniqueIdentifier>{00501ad9-81f2-4f75-999b-33d4bed82d3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debugger">
+      <UniqueIdentifier>{de4f9de7-715a-4287-bd42-1e8ef3820c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arngui">
+      <UniqueIdentifier>{e57f8914-c03c-4ff0-826b-cdb6ea23e69d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cpc">
+      <UniqueIdentifier>{689bd520-6e32-4c54-a69d-74ff32a460e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arnz80">
+      <UniqueIdentifier>{b240d3a6-0aa3-40b2-9d44-33d0e57d1520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arngui\sdl">
+      <UniqueIdentifier>{7000c875-580d-46cb-aa21-ddc6d27b7527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arngui\sdl2">
+      <UniqueIdentifier>{6374ae5d-1f67-41e5-ab29-b693aa2f2fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\inkz80">
+      <UniqueIdentifier>{3caa3702-167c-45b6-8e56-71e15983b467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cpc\debugger">
+      <UniqueIdentifier>{6574a8c1-08c0-4e84-b516-78a4c20e4825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cpc\diskimage">
+      <UniqueIdentifier>{23e555f9-1b51-43ff-9d08-aa7282d42f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\arngui\resources">
+      <UniqueIdentifier>{18a8f557-5bf0-4b91-8497-d55cd383aaaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arngui\arnz80">
+      <UniqueIdentifier>{217a92a8-f8d1-4de0-852f-b36f71150a56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\arngui\inkz80">
+      <UniqueIdentifier>{9c4f0a8f-d864-4555-8702-4395501d6223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpc">
+      <UniqueIdentifier>{2f2f8654-57d8-447d-b84d-f5a478c3f399}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AboutDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ArchiveDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\arnguiApp.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\arnguiMain.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\arnmodule.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ArrayOfInts.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AudioSettingsDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AutoTypeDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CSDDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DebuggerDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DefineKeyDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DevicesDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DriveSettingsDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DriveStatusDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EmuFileType.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EmuWindow.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExpansionRomDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FullScreenDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FileFiler.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GraphicsEditor.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ItemData.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\JoystickButtonDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\JoystickDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\KeyJoyDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\KeyStickDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LoadBinaryDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MediaStatusDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OnBoardRomDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PokeMemoryDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PositionalKeyboardDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SaveBinaryDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SnapshotSettingsDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SortableListCtrl.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\YMDialogs.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\debugger\memdump.c">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\debugger\dissasm.c">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\debugger\stack.c">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\z80tools\stepOver.c">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdl\SDLPlatformSpecific.cpp">
+      <Filter>Source Files\sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdl2\SDL2PlatformSpecific.cpp">
+      <Filter>Source Files\sdl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\debugger\breakpt.c">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ArnZ80Connect.cpp">
+      <Filter>Source Files\arngui\arnz80</Filter>
+    </ClCompile>
+    <ClCompile Include="..\InkZ80Connect.cpp">
+      <Filter>Source Files\arngui\inkz80</Filter>
+    </ClCompile>
+    <ClCompile Include="..\connection.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GetKeyDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LabelManager.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\z80\z80.c">
+      <Filter>Source Files\arngui\arnz80</Filter>
+    </ClCompile>
+    <ClCompile Include="..\windows\win.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sdlcommon\sound.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\inkz80\inkz80.cpp">
+      <Filter>Source Files\arngui\inkz80</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\aleste.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\amdrum.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\amram2.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\amsdos.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\amxms.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\arnold.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\asic.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\asicdiss.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\ata.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\autorunfile.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\autotype.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\bmp.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\brunword.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\cassette.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\cheatdb.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\cpc.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\cpcay.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\crc32.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\crtc.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\crtc_type0.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\crtc_type1.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\crtc_type1b.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\crtc_type2.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\crtc_type3.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\crtc_type4.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\csw.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\ctram.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\debugger\dbgitem.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\digiblaster.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\discwizard.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\diskimage\diskimg.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\dobhd20.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\diskimage\dsk.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\dumpym.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\emudevice.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\diskimage\extdsk.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\fdc.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\fdd.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\fdi.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\garray.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\debugger\gdebug.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\gendiss.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\gunstick.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\host.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hostg.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\i8253.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\i8255.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\diskimage\iextdsk.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\inicronram.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\joystick.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\jukebox.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\kcc.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\kccfloppy.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\kempston.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\keyjoy.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\debugger\labelset.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\lowerrom.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\magnum.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\mc146818.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\megarom.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\memcard.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\memory.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\memrange.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\mirage.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\monitor.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\mouse.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\multface.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\multitapx4.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\pal.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\debugger\parse.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\printer.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\printfile.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\psg.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\psgplay.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\ramrom.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\render.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\render5.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\riff.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\sampload.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\snapshot.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\snapv3.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\speech.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\spo256.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\symbiface.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\transtape.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\trojan.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\tzxold.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\voc.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\vortexwd20.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\z8536.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\westpha.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\wav.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\vrtxram.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\smartwatch.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\xmem.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\z80ctc.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\z80tools\z80diss.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\z80tools\z80time.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\hackit.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\hexam.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\audio.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\sdlsound.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OSD.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winape_poke_database.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\ams.c">
+      <Filter>Source Files\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MonitorSettingsDialog.cpp">
+      <Filter>Source Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\mht64k.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\ddi.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\ddi.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\xmass.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SnapshotLoadDialog.cpp">
+      <Filter>Header Files\arngui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\uide.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpc\rombo.c">
+      <Filter>Source Files\cpc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AboutDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ArchiveDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\arnguiApp.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\arnguiMain.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\arnmodule.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\aleste.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\amdrum.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\amram2.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\amsdos.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\amxms.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\arnold.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\asic.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\ata.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AudioSettingsDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\autoboot.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\autorunfile.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\autotype.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AutoTypeDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\bmp.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\brunword.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\cassette.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\cheatdb.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\cpc.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\cpcay.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\cpcendian.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\cpcglob.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\crtc.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\crtc_type0.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\crtc_type1.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\crtc_type2.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\crtc_type3.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\crtc_type4.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CSDDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DebuggerDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DefineKeyDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DevicesDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DriveSettingsDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\csw.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\ctram.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\device.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DriveStatusDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EmuFileType.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EmuWindow.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExpansionRomDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\dumpym.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\fdc.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\fdd.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\fdi.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FileFilter.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FullScreenDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GetKeyDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GraphicsEditor.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ItemData.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\JoystickButtonDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\JoystickDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\KeyJoyDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\joystick.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\jukebox.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\kcc.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\kempston.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\keyjoy.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\magnum.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\mc146818.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\megarom.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\memory.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\memrange.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\monitor.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\mouse.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\multface.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\debugger\parse.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\pal.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\packedimage.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\KeyStickDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LoadBinaryDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Media.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MediaStatusDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MultifaceSettingsDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OnBoardRomDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PokeMemoryDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PositionalKeyboardDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\printer.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\psg.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\psgplay.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\ramrom.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\render.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\riff.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\sampload.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\snapshot.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\snapv3.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdlcommon\sound.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\speech.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\spo256.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\tzx.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\voc.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\vortex.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\vrtxram.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\wav.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\westpha.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\winape_poke_database.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SaveBinaryDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SnapshotSettingsDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SortableListCtrl.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UpdatableDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\YMDialogs.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\z80\z80.h">
+      <Filter>Header Files\arnz80</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\z80\z80daa.h">
+      <Filter>Header Files\arnz80</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\z80\z80funcs.h">
+      <Filter>Header Files\arnz80</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\z80\z80funcs2.h">
+      <Filter>Header Files\arnz80</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\z80\z80macros.h">
+      <Filter>Header Files\arnz80</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\z80\z80tables.h">
+      <Filter>Header Files\arnz80</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\z8536.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\garray.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\gendiss.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\gunstick.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\headers.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\host.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\i8253.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\i8255.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\debugger\item.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inkz80\inkz80.h">
+      <Filter>Header Files\inkz80</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\diskimage\diskimg.h">
+      <Filter>Header Files\cpc\diskimage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\diskimage\extdsk.h">
+      <Filter>Header Files\cpc\diskimage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\diskimage\dsk.h">
+      <Filter>Header Files\cpc\diskimage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\debugger\dissasm.h">
+      <Filter>Header Files\cpc\debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\debugger\memdump.h">
+      <Filter>Header Files\cpc\debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\debugger\stack.h">
+      <Filter>Header Files\cpc\debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\debugger\breakpt.h">
+      <Filter>Header Files\cpc\debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\debugger\gdebug.h">
+      <Filter>Header Files\cpc\debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\diskimage\iextdsk.h">
+      <Filter>Header Files\cpc\diskimage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdl2\SDL2PlatformSpecific.h">
+      <Filter>Header Files\arngui\sdl2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdl\SDLPlatformSpecific.h">
+      <Filter>Header Files\arngui\sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\connection.h">
+      <Filter>Source Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LabelManager.h">
+      <Filter>Source Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\debugger\labelset.h">
+      <Filter>Source Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\multiplay.h">
+      <Filter>Source Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\smartwatch.h">
+      <Filter>Source Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\xmem.h">
+      <Filter>Source Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IntClientData.h">
+      <Filter>Source Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\KeyDefStruct.h">
+      <Filter>Source Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\EmuDevice.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\z80ctc.h">
+      <Filter>Source Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\audioevent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\labelset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MonitorSettingsDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdl2\PlatformSpecific.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sdl\PlatformSpecific.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\audio.h">
+      <Filter>Source Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\sdlsound.h">
+      <Filter>Source Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OSD.h">
+      <Filter>Source Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winape_poke_database.h">
+      <Filter>Source Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\ddi.h">
+      <Filter>Source Files\cpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SnapshotLoadDialog.h">
+      <Filter>Header Files\arngui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpc\crtc_type1b.h">
+      <Filter>Header Files\cpc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\windows\resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\arngui.fbp">
+      <Filter>Header Files\arngui\resources</Filter>
+    </None>
+    <None Include="..\..\cpc\clean.sh">
+      <Filter>Source Files\cpc</Filter>
+    </None>
+    <None Include="..\..\cpc\unused">
+      <Filter>Source Files\cpc</Filter>
+    </None>
+    <None Include="..\..\cpc\CMakeLists.txt" />
+    <None Include="..\..\cpc\debugger\clean.sh" />
+    <None Include="..\..\cpc\debugger\CMakeLists.txt" />
+    <None Include="..\..\cpc\diskimage\clean.sh" />
+    <None Include="..\..\cpc\diskimage\CMakeLists.txt" />
+    <None Include="..\..\cpc\snapshot.c~" />
+    <None Include="..\GUIFrame.xrc" />
+  </ItemGroup>
+</Project>

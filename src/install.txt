@@ -1,0 +1,38 @@
+Windows
+-------
+
+1. Run the setup.exe
+
+The setup is not currently signed:
+
+On Windows 8.1 you may not see the installer dialog appear for a long time, you may need to 
+temporarily disable antivirus (e.g. windows defender) to allow it.
+
+On Windows 8.1 and Windows 10, SmartScreen may warn you and attempt to block it, you should allow
+it to be installed.
+
+Please feel free to virus scan it and check it with your spyware tools before installing.
+The application or it's files should not contain any viruses. Do not install if it any are 
+identified.
+
+2. When you run Arnold, go to Tools->File Associations. Do Select All and apply. 
+Uncheck "Make Arnold the default emulator" if you don't want it to override your existing
+file associations. Files can still be opened by right clicking and doing "Open With Arnold".
+
+Mac
+---
+
+1. Open the DMG file
+2. Drag and drop the icon into your applications
+
+Arnold is now installed.
+
+Linux
+-----
+
+Currently you will need to build the executable. You can then run it directly from the
+executable directory. Arnold doesn't need to be installed.
+
+File associations can be setup using the shell script in the linux directory.
+
+A rpm/deb package is planned.

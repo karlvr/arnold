@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Arnold Emulator
+Comment=Play Amstrad Games
+Exec=/home/kev/arnold/exe/Release/arnold/arnold %f
+Icon=/home/kev/arnold/exe/Release/arnold/arnlogo.png
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/home/kev/arnold/src/arngui/arnold.xpm
+Categories=Application;
+MimeType=application/x-dsk;application/x-cdt;application/x-cpr;application/x-sna;

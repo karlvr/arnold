@@ -1,0 +1,13 @@
+Source: arnold
+Section: games
+Priority: optional
+Maintainer: Kevin Thacker <kev@cpcfreak.co.uk>
+Build-Depends: debhelper (>= 9), cmake, libwxbase3.0-0 (>= 3.0.1), libwxgtk3.0-0 (>= 3.0.1), libsdl1.2-dev (>= 1.2.15)
+Standards-Version: 3.9.5
+Homepage: http://80.229.30.31:1971/arnold
+Vcs-Fossil: http://80.229.30.31:1971/arnold
+
+Package: arnold
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Amstrad CPC emulator

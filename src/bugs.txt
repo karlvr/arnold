@@ -1,0 +1,220 @@
+Mac port bugs:
+- joystick works???
+- keyjoy clashes with keyboard regardless of keyjoy block. need to fix that 
+better.
+- joystick dialog and csd dialog do not layout correctly
+- speed of emulator can't be controlled.
+- sometimes menus do not respond
+- under virtual box it's slow.
+- pressing f11/f12 in debugger defaults to mac behaviour and makes window fullscreen
+consider using mac defaults or block it somehow
+- crashes on exit - fixed.
+
+- remove disc while it's reading it -> crash
+
+Other issues:
+- tooltips in lists so we can see text (especially media dialog)
+- graphics editor uses monitor mode?? Or should it???
+- Loading and auto executing a binary file to &c000-&ffff doesn't work
+- Archive dialog listctrl headers are blank (done)
+- File Extension dialog listctrl headers are blank (done)
+- Archive dialog allows you to pick other types than the type that should be allowed
+- If you try to load a cart as a disk it will crash
+- File Associations dialog needs to be bigger (done)
+- file associations need to use current user for "just for me". (done)
+
+- autotype will show an error the first time because file is not found. (done)
+- RUN"BOXWORLD in autotype shows extra chars!
+- autotype needs to shut off when done
+- keyboard needs to be blanked when focus lost
+- autotype doesn't remember if you click Apply. (done)
+- auto start doesn't work yet (done)
+- auto start from command-line (better)
+- write changes to image doesn't work yet (should it also so no changes?)
+- message on quit about saving stuff and also ensure it saves everything. (better)
+- snapshot save doesn't allow you to choose version (done)
+- four drives setup
+- forcing edsk when writing
+- multiface stop (replaced)
+- display accuracy
+- scanlines or not (done)
+- rom settings (inside devices - wip)
+- hardware on joystick port (done)
+- inicron ram/rom (inside devices - wip)
+- multiface settings dialog (replaced)
+- poke memory (useful or not?) - Bruno says not
+- debugger (wip)
+- winape poke database
+- ym recording dialog does nothing (done)
+- storing recent info to settings (done)
+- recent menu on each type (done)
+- file type per drive
+- drag and drop, need to remember path in case file is modified
+- if you change drive settings to smaller, and a disk in drive has 80 tracks, it can't be read anymore.
+need to warn
+- disk is modified when inserting a new disk. do after disk has been picked?
+- drive status (ready, track 0, cur track etc) refreshed (done)
+- refresh mechanism for dialogs that need it (done)
+- debugger show changed values with colours
+- disk image info
+- sound choose (stereo, mono expansion, internal speaker) (done)
+- joy button remap (done)
+- save on meda (done)
+- save history
+- ddi-1 density
+- memdump/disassemble (wip)
+- 8255 (most) (wip)
+- au
+- crtc (most)
+- ga (most)
+- asic (most)
+- printer (most)
+- kcc hardware (z8536) (wip)
+- aleste hardware (some)
+- side fdd
+- motor on/off
+fdc drive sel, fdc command, side fdd sees
+- auto type needs to be single instance (DONE)
+- ym recording needs to be single instance (DONE)
+- sensible window position and sizes (DONE)
+- autostart and insert media could do with some work (split out image recognise code from loading)
+- autostart from drive B (need to enter |B or similar?)
+- autostart when forcing side 1
+- list of image types in save screenshot (DONE)
+- update memdump, disassembly and stack windows if you change something in them
+- memdump etc need updating when stopped again (DONE?)
+- cursors in translated mode (done)
+- copy in translated mode
+- caps lock in translated mode??? not sure this is needed
+- ctrl begin/end of line in translated mode
+- what to do if you press a key that is not supported by cpc in that mode
+- drag and drop of zip files doesn't work yet
+- in translated mode, if you enter a char with accent, convert to char without accent for cpc!
+- when autorun and too many files ask user which file to load.
+- drag and drop not working if drive swapped. (especially if drive B is then also disabled!)
+perhaps warn if a drive is disabled?
+- check joystick keys are emulated correct (problems with up and right in Prehistorik 2)
+- directional keys e.g. 7 for directional - added
+- joystick works in translated mode - fixed
+- dialog with checkbox so Markus can turn it off
+- tap support
+- printer i/o information - (wip)
+- close with alt+f4, and shutdown one
+- sprite coords as signed - almost fixed, coords are not returned as signed!
+- sprite drawing back in
+- scrolling back in
+- hide column back in
+- sprite debug (force off, force on)
+- f1/f2 etc in translated mode (a solution has been added, not sure if it's great) (pc keyboard does number?)
+- kcc, aleste specific
+- csd port info
+- |game, |jeux etc doesn't seem to work with plus cart
+- function to translate to/from address range. DONE
+- Reload of cartridges in csd.
+- Reload of roms in rom manager
+- Reload of cartridge inserted.
+- Display of what is mapped to each page in z80 (code etc).
+- Display memdump as 16-bit. (wip)
+- Remove highlight bar when stepping/debugging.
+- Also hide mouse?
+- Toggle breakpoint on/off  crashes. (done)
+- address remap tool so you enter start and end of range and what it maps to
+then you enter address and it tells you old location (done)
+- full screen (some work was done in this, worked ok before sdl/sdl2 split - needs checking and fixing)
+- nop count for instructions that have different values depending on flags not done correctly!
+- changing hit count, causes refresh problem for list and in code.
+- colour name for palette (cpc)
+- stop on i/o
+- stop on asic unlock
+- dissassemble to file (done)
+- gfx viewer (wip)
+- label window (and go to label)
+- better rom window (almost done)
+- drag and drop zip
+- store joystick name not index (done)
+- save/export/import config (xml)
+- happy computer printer mod enable/disable
+- asic resistors on/off (partial in code)
+- archive filter
+- store/restore state via Snapshot
+- stack guards
+- stack breakpoint
+- change octal, hex, decimal for each value (in progress)
+- store/restore/save Breakpoints
+- restore debugger state
+- expansion rom dialog for roms on rom-board only (done)
+- on-board rom dialog to override on-board roms (reason on-board rom is special) (done)
+- Need to be able to setup configurations and choose them better.
+- Need to be able to setup keyboard configs and choose them better.
+- Need to add graphics viewing/editing dialog. (in progress)
+- Try and implement symbiface mouse so we can go one step towards having mouse support in emulator.
+handle mouse messages and pass to emulator
+- Plus with diagnostic cart and extra roms.
+- Plus with c3 config and it?s ram etc. Does some ram/rom show through?
+- dissassembly window/memory dump window don't show what range you are viewing
+- memdump window, don't know address of cursor easily
+- load file in debugger can't set new load address
+- setting an address in debugger doesn't work immediately like it should - refresh issue
+- load data doesn't always seem to work although it should
+- indicate if a drive is forced to side 1 because it will confuse the hell when it says "read fail" ;)
+- show PAL16L8 paging
+- set size of data to save for version 2 and 3.
+- store screenshot when writing out snapshot etc, so we can show what state the screen was in when it was done
+to help identify good snapshots etc
+- if we are set to force side 1 and we insert a single sided disk warn user!
+- default state of crtc type 3 and 4. need to put it into a rom to find out.
+- being able to sort wxlistctrl. (in progress)
+- launching emu through file association gives warning about missing dll because the path is not changed (should be done)
+- bookmarks in debugger
+- labels in debugger
+- autorunfile locks up sometimes (waiting for key to be scanned again it seems) (it seems it jumps into the wrong memory and goes wrong)
+- autorunfile while burning rubber is active causes problems; not resetting correctly??
+- sortable list views to benefit archive dialog amongst others. (in progress)
+- force save etc with no disk should tell you about it
+- reloading a blank disc - not possible because no filename
+- need to indicate we have blank media inserted that requires save in media
+- save snapshot (set memory size etc)
+- drag and drop into auto type dialog
+- insert rom (search devices; enable and insert)
+- debugger set address fix (done)
+- instruction timings for dma (place to put timing looks bad too)
+-sdl2 under linux crashes sometimes in pthreads. not sure why yet.
+- http://scratchpad.wikia.com/wiki/Spectrum_emulator_file_formats implement support for hdf
+
+other list:
+- victory road rotate joystick
+- digital joysticks on cpc+ cause no clash? done
+- analogue joystick code
+- control select boxworld
+- vertical hardware scroll code
+- horizontal scrolling code
+- tilemap scroll
+
+Break emulator on vbl, hbl, interrupt, disc access etc.
+instruction timing breakpoint thing?
+ 
+Run .bin/.bas by injecting them into a disk image and running it.
+
+ 
+
+Currently "inject to ram" is used.
+
+Interrupt mode 2 test putting stack where int vector is to see if push is done before int table read or not.
+
+Restore address after. ;)
+ 
+
+Consider tape/disc patches like original a-cpc?
+In stack window show memory opcodes from address??
+
+MAC:
+- from beginning sdl window has focus
+clicking on other window looses focus and it's not regained again.
+- find a good way to make sdl1 work with mac 
+- sdl2 seems to work ok but doesn't embed window.
+
+
+to test:
+- ppi clear vsync when crtc sets it
+- interrupt counter cpc and kcc; must vsync be active at the same time we see each hsync for reset to happen?
+- make

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1317548472 source:/home/kev/src/tools/makez80/makez80.c
+	<stdio.h>
+	<stdlib.h>
+
+1228744582 source:/home/kev/src/tools/makez80/z80gen.c
+	"z80.h"
+	"z80gen.h"
+
+1228744308 /home/kev/src/tools/makez80/z80.h
+
+1228557470 /home/kev/src/tools/makez80/z80gen.h
+

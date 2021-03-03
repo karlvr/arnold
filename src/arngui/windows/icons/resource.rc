@@ -1,0 +1,9 @@
+#define ICON_DISK 0
+#define ICON_CASSETTE 1
+#define ICON_CARTRIDGE 2
+#define ICON_SNAPSHOT 3
+
+ICON_DISK ICON                    "./disk.ico"
+ICON_CASSETTE ICON                    "./cass.ico"
+ICON_CARTRIDGE ICON                    "./cart.ico"
+ICON_SNAPSHOT ICON                    "./snapshot.ico"

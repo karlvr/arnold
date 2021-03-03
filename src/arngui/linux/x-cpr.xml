@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+<mime-type type="application/x-cpr">
+<comment>Amstrad Plus Cartridge</comment>
+<icon name="application-x-cpr"/>
+<comment xml:lang="en_GB">Amstrad Plus Cartridge</comment>
+<glob-deleteall/>
+<glob pattern="*.cpr"/>
+</mime-type>
+</mime-info>

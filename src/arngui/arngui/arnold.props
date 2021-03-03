@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <WXDIR>C:\wxWidgets-3.1.0</WXDIR>
+    <SDLDIR>C:\Users\kev\Documents\SDL2-devel-2.0.5-VC\SDL2-2.0.5</SDLDIR>
+    <SDLIMAGEDIR>C:\Users\kev\Documents\SDL2_image-devel-2.0.1-VC\SDL2_image-2.0.1</SDLIMAGEDIR>
+    <SDLTTFDIR>C:\Users\kev\Documents\SDL2_ttf-2.0.14-win32-x86</SDLTTFDIR>
+    <Z80TYPE>ARNZ80</Z80TYPE>
+    <SDLTYPE>USE_SDL2</SDLTYPE>
+	<SDLLIB>SDL2.lib</SDLLIB>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="WXDIR">
+      <Value>$(WXDIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SDLDIR">
+      <Value>$(SDLDIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="Z80TYPE">
+      <Value>$(Z80TYPE)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SDLTYPE">
+      <Value>$(SDLTYPE)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

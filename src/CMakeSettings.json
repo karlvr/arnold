@@ -1,0 +1,54 @@
+{
+    "configurations": [
+        {
+        "name": "Visual Studio 15 x86",
+        "generator": "Visual Studio 15 2017",
+		"buildRoot":  "${projectDir}",
+        "cmakeCommandArgs":  "",
+        "buildCommandArgs": "-m -v:minimal",
+		"variables": [
+			{
+			"name": "Z80_VERSION",
+			"value": "USE_ARNZ80"
+			},
+			{
+			"name": "SDL_VERSION",
+			"value": "USE_SDL2"
+			},
+			{
+			"name" : "EMBED_SDL",
+			"value" : "YES"
+			},
+			{
+			"name": "SDL2_PATH",
+			"value": "C:/Users/kev/Documents/SDL2-devel-2.0.5-VC/SDL2-2.0.5"
+			}
+		]
+		},
+        {
+        "name": "Visual Studio 15 x64",
+        "generator": "Visual Studio 15 2017 Win64",
+		"buildRoot":  "${projectDir}",
+        "cmakeCommandArgs":  "",
+        "buildCommandArgs": "-m -v:minimal",
+		"variables": [
+			{
+			"name": "Z80_VERSION",
+			"value": "USE_ARNZ80"
+			},
+			{
+			"name": "SDL_VERSION",
+			"value": "USE_SDL2"
+			},
+			{
+			"name" : "EMBED_SDL",
+			"value" : "YES"
+			},
+			{
+			"name": "SDL2_PATH",
+			"value": "C:/Users/kev/Documents/SDL2-devel-2.0.5-VC/SDL2-2.0.5"
+			}
+		]
+        }
+    ]
+}

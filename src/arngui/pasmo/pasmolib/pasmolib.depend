@@ -1,0 +1,71 @@
+# depslib dependency file v1.0
+1166127902 source:d:\newarnold\arnold\src\arngui\pasmo\asm.cpp
+	"asm.h"
+	"asmimpl.h"
+
+1150210158 d:\newarnold\arnold\src\arngui\pasmo\asm.h
+	"pasmotypes.h"
+	<iostream>
+	<vector>
+	<map>
+	<set>
+	<deque>
+
+1166375836 d:\newarnold\arnold\src\arngui\pasmo\pasmotypes.h
+	"config_ostream.h"
+	"config_types.h"
+	<ostream>
+	<iostream>
+	<string>
+	<limits.h>
+	<stdlib.h>
+	<stdexcept>
+	<stdint.h>
+
+1145971454 d:\newarnold\arnold\src\arngui\pasmo\config_ostream.h
+
+1145971412 d:\newarnold\arnold\src\arngui\pasmo\config_types.h
+
+1160515370 d:\newarnold\arnold\src\arngui\pasmo\asmimpl.h
+	"asm.h"
+	"token.h"
+	"value.h"
+	<vector>
+	<stdexcept>
+
+1140031326 d:\newarnold\arnold\src\arngui\pasmo\token.h
+	"pasmotypes.h"
+	"pasmoimpl.h"
+	<deque>
+
+1140031326 d:\newarnold\arnold\src\arngui\pasmo\pasmoimpl.h
+	"pasmotypes.h"
+
+1140031328 d:\newarnold\arnold\src\arngui\pasmo\value.h
+	"pasmotypes.h"
+
+1140031326 source:d:\newarnold\arnold\src\arngui\pasmo\asmfile.cpp
+	"asmfile.h"
+	"parser.h"
+	"trace.h"
+	<sstream>
+	<vector>
+	<deque>
+	<algorithm>
+	<stdexcept>
+
+1140031326 d:\newarnold\arnold\src\arngui\pasmo\asmfile.h
+	"token.h"
+	<iostream>
+	<fstream>
+
+1166380912 d:\newarnold\arnold\src\arngui\pasmo\parser.h
+
+1145208382 d:\newarnold\arnold\src\arngui\pasmo\trace.h
+	<cstddef>
+	<string>
+	"config_debug.h"
+	<sstream>
+
+1145203870 d:\newarnold\arnold\src\arngui\pasmo\config_debug.h
+
