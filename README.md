@@ -10,6 +10,9 @@ To build on macOS, install the dependencies using [Homebrew](https://brew.sh).
 brew install cmake wxwidgets
 ```
 
+Note that `wxwidgets` 3.1.4 or later is required to build on Big Sur, due to some dylib
+problems with (at least) version 3.0.5.
+
 Download the latest SDL2 Runtime Binaries from https://www.libsdl.org/download-2.0.php
 and copy the `SDL2.framework` folder it contains to `/Library/Frameworks` using `sudo`.
 Arnold is know to compile with SDL2 2.0.14.
