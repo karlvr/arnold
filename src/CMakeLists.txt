@@ -23,6 +23,9 @@ MESSAGE("Install path ${ABSOLUTE_INSTALL_PATH}")
 # set where to put mac bundle; without it the bundle goes into the arngui folder
 set(CMAKE_INSTALL_PREFIX ${ABSOLUTE_INSTALL_PATH})
 
+# set macOS deployment target so we compile for a range of macOS releases
+set(CMAKE_OSX_DEPLOYMENT_TARGET "10.8")
+
 if (Z80_VERSION STREQUAL "USE_INKZ80")
 	set(USE_INKZ80 "Yes")
 endif(Z80_VERSION STREQUAL "USE_INKZ80")
