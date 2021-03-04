@@ -525,6 +525,18 @@ void EmulationWindow::HandleKey(wxKeyEvent &event)
 			storedEvent.SetKey(event.GetTimestamp(), keyCode, event.GetEventType() == wxEVT_KEY_DOWN, event.ShiftDown(), event.ControlDown(), event.AltDown());
 			StoredKeys.push_back(storedEvent);
 		//	printf("%d mod: %d\n", event.GetKeyCode(), event.GetModifiers());
+
+			if (keyCode == WXK_CAPITAL) {
+				/* Caps lock is only reported by WX as a key down, never a key up, so we simulate a key
+				   up in the future (by the number of ms that LastTimeStamp is incremented) so the CPC
+				   sees the key go back up next frame.
+				 */
+				StoredKeyEvent storedEvent2;
+				storedEvent2.SetKey(event.GetTimestamp() + 21, keyCode, 0, event.ShiftDown(), event.ControlDown(), event.AltDown());
+				StoredKeys.push_back(storedEvent2);
+
+				LastTimeStamp = event.GetTimestamp();
+			}
 		}
 	}
 #endif
