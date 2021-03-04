@@ -507,8 +507,13 @@ void EmulationWindow::HandleKey(wxKeyEvent &event)
 #if ((defined(GTK2_EMBED_WINDOW) && defined(__WXGTK__)) || (defined(MAC_EMBED_WINDOW) && defined(__WXMAC__)))
 	if (!Debug_IsStopped())
 	{
-		/* Need to allow non-unicode keys through regardless of keyboard mode, as keyboard mode 1 only handles unicode keys */
-		if (Keyboard_GetMode() == 0 || event.GetUnicodeKey() == 0)
+		const int keyCode = event.GetKeyCode();
+
+		/* Need to allow non-unicode keys through regardless of keyboard mode, as keyboard mode 1 only handles unicode keys.
+		   But we don't want to allow modifier keys through by themselves as they confuse the CPC when translated mode
+		   types a key while we've reported that SHIFT is down (e.g. try typing a colon in translated, it would have output a *)
+		 */
+		if (Keyboard_GetMode() == 0 || (event.GetUnicodeKey() == 0 && (keyCode != WXK_SHIFT && keyCode != WXK_ALT && keyCode != WXK_CONTROL)))
 		{
 			if (!m_bLastTimeStampSet)
 			{
@@ -517,7 +522,7 @@ void EmulationWindow::HandleKey(wxKeyEvent &event)
 			}
 
 			StoredKeyEvent storedEvent;
-			storedEvent.SetKey(event.GetTimestamp(), event.GetKeyCode(), event.GetEventType() == wxEVT_KEY_DOWN, event.ShiftDown(), event.ControlDown(), event.AltDown());
+			storedEvent.SetKey(event.GetTimestamp(), keyCode, event.GetEventType() == wxEVT_KEY_DOWN, event.ShiftDown(), event.ControlDown(), event.AltDown());
 			StoredKeys.push_back(storedEvent);
 		//	printf("%d mod: %d\n", event.GetKeyCode(), event.GetModifiers());
 		}
