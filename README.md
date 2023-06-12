@@ -43,29 +43,16 @@ Note that we must use force in order to replace codesigning on some of the frame
 Then to notarize the binary (assuming you're setup with Apple Developer certificates, otherwise
 see https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution):
 
-```shell
-username="APPLE ACCOUNT USERNAME"
-password="APPLE ACCOUNT PASSWORD"
-asc_provider="PROVIDER SHORTNAME"
+First, you need to setup your credentials once, replacing `TEAMID` and `APPLEID`:
 
-/usr/bin/ditto -c -k --keepParent "../exe/Release/arnold/arnold.app" "arnold.zip"
-xcrun altool --notarize-app --primary-bundle-id com.thacker.arnold \
-	--asc-provider "$asc_provider" \
-	-u "$username" \
-	-p "$password" \
-	-f "arnold.zip"
+```shell
+xcrun notarytool store-credentials --team-id TEAMID --apple-id APPLEID Arnold
+```
+
+Then, each time you want to notarize the `arnold.zip` file:
+
+```shell
+xcrun notarytool submit --keychain-profile Arnold --progress --wait arnold.zip
+xcrun stapler staple ../exe/Release/arnold/arnold.app
 rm arnold.zip
-```
-
-If notarization fails, view the result including a link to the log file:
-
-```shell
-requestuuid="REQUEST UUID FROM UPLOAD"
-xcrun altool --notarization-info "$requestuuid" -u "$username" -p "$password"
-```
-
-Then once you receive the email to say that notarization is complete:
-
-```shell
-xcrun stapler staple "../exe/Release/arnold/arnold.app"
 ```
