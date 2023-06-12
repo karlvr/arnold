@@ -237,4 +237,4 @@ endif(USE_INKZ80 MATCHES "Yes")
 # add gui librray
 add_subdirectory (arngui) 
 
-
+#set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64" STRING)

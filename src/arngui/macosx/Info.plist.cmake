@@ -183,6 +183,7 @@
 	<string>10.6</string>
 	<key>LSArchitecturePriority</key>
 	<array>
+		<string>arm64</string>
 		<string>x86_64</string>
 	</array>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
